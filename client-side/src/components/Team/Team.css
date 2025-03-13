@@ -143,6 +143,9 @@
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+  border-radius: 40px;
+  width: 80vw;
+  margin-left: 10%;
 }
 
 .cta-content {
