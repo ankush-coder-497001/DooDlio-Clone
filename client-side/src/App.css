@@ -3241,15 +3241,15 @@ p {
 }
 
 .container {
-  flex-flow: column;
-  justify-content: center;
+  justify-content: space-around;
   width: 88vw;
   max-width: 87.5rem;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0;
-  display: block
+ display: flex;
+ align-items: center;
 }
 
 .container.features-container {
@@ -3572,7 +3572,8 @@ p {
 .hero-section {
   background-color: var(--accent);
   padding-bottom: 0;
-  position: relative
+  position: relative;
+  height: calc(100vh - 85px);
 }
 
 .section.features-section {
@@ -4312,7 +4313,7 @@ p {
   position: relative
 }
 
-.heading-7.h6 {
+.h6 {
   color: var(--black);
   font-size: 1.8rem;
   font-weight: 800;
@@ -4603,7 +4604,10 @@ p {
   .hero-section {
       background-image: none;
       padding-bottom: 0;
-      position: relative
+      position: relative;
+  height: calc(100vh - 85px);
+
+
   }
   .section.features-section {
       padding-top: 4rem
@@ -4940,7 +4944,8 @@ p {
       display: flex
   }
   .hero-section {
-      padding-bottom: 2rem
+      padding-bottom: 2rem;
+
   }
   ._2-column-grid {
       grid-template-columns: 1fr
