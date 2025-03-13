@@ -1,0 +1,137 @@
+/* Integrations.css */
+
+.integrations-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.container-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.integrations-text-box {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  gap: 20px;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marquee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.integration-logo {
+  width: 40px;
+  height: 40px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.integration-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.integration-link:hover {
+  text-decoration: underline;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .marquee {
+    flex-wrap: nowrap;
+    animation-duration: 15s;
+  }
+
+  .marquee-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .marquee-card {
+    width: 200px;
+    padding: 15px;
+  }
+}
