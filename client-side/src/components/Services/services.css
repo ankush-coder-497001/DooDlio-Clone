@@ -1,0 +1,133 @@
+.services-container {
+  padding: 80px 20px;
+  background-color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.services-heading {
+  font-size: 48px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.yellow-blob {
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  width: 120px;
+  height: 60px;
+  background-color: #ffff33;
+  border-radius: 50%;
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 80px;
+}
+
+.services-grid {
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.service-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  transform: rotate(-10deg);
+}
+
+.service-item .icon {
+  width: 80px;
+  height: 80px;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.4s ease; /* Add smooth transition */
+}
+
+.service-item .icon:hover {
+  transform: rotate(50deg); /* Rotate 360 degrees on hover */
+}
+
+/* ... existing code */
+
+.services-grid {
+  position: relative;
+  height: 600px; /* Increased height to accommodate more spread */
+  margin: 0 auto;
+  max-width: 1000px; /* Increased max-width for more horizontal space */
+}
+
+/* Positioning for each service item */
+.marketing {
+  top: 10%;
+  left: 10%;
+}
+
+.copywriting {
+  top: 17%;
+  left: 40%;
+}
+
+.research {
+  top: 5%;
+  right: 10%;
+}
+
+.design {
+  bottom: 35%;
+  left: 15%;
+}
+
+.some {
+  bottom: 30%;
+  left: 55%;
+}
+
+.qa {
+  bottom: 25%;
+  right: 5%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-grid {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .service-item {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,155 @@
+/* Main container */
+.faq-container {
+  background-color: #ffff54;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.faq-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.question-mark {
+  font-size: 48px;
+  color: white;
+  position: absolute;
+  top: -10px;
+}
+
+.question-mark.left {
+  left: -40px;
+}
+
+.question-mark.right {
+  right: -40px;
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Content layout */
+.faq-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* FAQ items */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #222;
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.faq-question:hover {
+  background-color: #333;
+}
+
+.faq-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  background-color: white;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-content {
+    flex-direction: column;
+  }
+
+  .faq-title {
+    font-size: 36px;
+  }
+
+  .question-mark {
+    font-size: 36px;
+  }
+
+  .question-mark.left {
+    left: -30px;
+  }
+
+  .question-mark.right {
+    right: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 20px 10px;
+  }
+
+  .faq-title {
+    font-size: 32px;
+  }
+
+  .question-mark {
+    font-size: 32px;
+    top: -5px;
+  }
+
+  .question-mark.left {
+    left: -25px;
+  }
+
+  .question-mark.right {
+    right: -25px;
+  }
+
+  .faq-question {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+}
+

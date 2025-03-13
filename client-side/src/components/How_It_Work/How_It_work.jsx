@@ -15,7 +15,7 @@ const HowItWorks = () => {
           <div className="card">
             <div className="stage-label">STAGE 1</div>
             <div className="illustration">
-              <img src="/images/discover-problem.png" alt="Discover a Problem" />
+              <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d193262b0b25a14d66b5a0_problem.svg" alt="Discover a Problem" />
             </div>
             <h2 className="card-heading">Discover a Problem</h2>
             <p className="card-text">
@@ -28,7 +28,7 @@ const HowItWorks = () => {
           <div className="card">
             <div className="stage-label">STAGE 2</div>
             <div className="illustration">
-              <img src="/images/purchase-template.png" alt="Purchase Template" />
+              <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d18ee65730673e34f17109_payment.svg" alt="Purchase Template" />
             </div>
             <h2 className="card-heading">Purchase Template</h2>
             <p className="card-text">
@@ -41,7 +41,7 @@ const HowItWorks = () => {
           <div className="card">
             <div className="stage-label">STAGE 3</div>
             <div className="illustration">
-              <img src="/images/enjoy-results.png" alt="Enjoy Results" />
+              <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d18f87f3e440d19c822453_enjoy-results.svg" alt="Enjoy Results" />
             </div>
             <h2 className="card-heading">Enjoy Results</h2>
             <p className="card-text">
