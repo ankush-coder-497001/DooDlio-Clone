@@ -1,6 +1,13 @@
 import React from "react";
 import "./IntegrationsSection.css";
 import Oval from "./images/circled-oval.svg";
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
+gsap.registerPlugin(ScrollTrigger);
 
 const integrations = [
   {
@@ -26,37 +33,70 @@ const integrations = [
 ];
 
 const IntegrationsSection = () => {
-  return (
-    <section id="integrations" className="integrations-section">
-      <div className="container-wrap">
-        <div className="container integrations-container">
-          <div className="text">
-            <div className="text-box integrations-text-box">
-              <h2 className="heading"><span className="heading1">Integrate Your</span> <span>Favorite Tools</span></h2>
-              <img src={Oval} alt="Oval" className="oval" />
-            </div>
-            <p className="paragraph">
-              The integrations section showcases how our product seamlessly connects with other tools.
-            </p>
-          </div>
 
-          <div className="marquee-wrapper">
-            <div className="marquee">
-              {integrations.map((item, index) => (
-                <div key={index} className="marquee-card">
-                  <div className="card-header">
-                    <img src={item.img} alt={item.name} className="integration-logo" />
-                    <h3>{item.name}</h3>
+  const container = useRef();
+
+  useGSAP(() => {
+    var tl = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: '.text',
+          // markers: true,
+          start: "-40% center",
+          end: "-40% center",
+          scrub: 1,
+        }
+      }
+    );
+
+    tl.from('.heading', {
+      opacity: 0,
+      y: "-40%",
+      duration: 1,
+    }, "ab");
+
+    tl.from('.paragraph1', {
+      opacity: 0,
+      y: "-40%",
+      duration: 1,
+      delay: 1,
+    }, "ab");
+
+  }, { scope: container });
+
+  return (
+    <main ref={container}>
+      <section id="integrations" className="integrations-section">
+        <div className="container-wrap">
+          <div className="container integrations-container">
+            <div className="text">
+              <div className="text-box integrations-text-box">
+                <h2 className="heading"><span className="heading1">Integrate Your</span> <span>Favorite Tools</span></h2>
+                <img src={Oval} alt="Oval" className="oval" />
+              </div>
+              <p className="paragraph1">
+                The integrations section showcases how our product seamlessly connects with other tools.
+              </p>
+            </div>
+
+            <div className="marquee-wrapper">
+              <div className="marquee">
+                {integrations.map((item, index) => (
+                  <div key={index} className="marquee-card">
+                    <div className="card-header">
+                      <img src={item.img} alt={item.name} className="integration-logo" />
+                      <h3>{item.name}</h3>
+                    </div>
+                    <p className="card-description">{item.description}</p>
+                    <a href="/" className="integration-link">{item.name} Integration</a>
                   </div>
-                  <p className="card-description">{item.description}</p>
-                  <a href="/" className="integration-link">{item.name} Integration</a>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 

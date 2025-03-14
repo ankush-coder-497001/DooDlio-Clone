@@ -1,4 +1,13 @@
 import "./Team.css";
+
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Team() {
   const teamMembers = [
     {
@@ -40,33 +49,82 @@ export default function Team() {
   ]
 
 
+  const container = useRef();
+
+  useGSAP(() => {
+    var tl = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: '.services-content',
+          // markers: true,
+          start: "50% center",
+          end: "50% center",
+          scrub: 1,
+        }
+      }
+    );
+    var tl2 = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: '.team-grid',
+          // markers: true,
+          start: "30% center",
+          end: "30% center",
+          scrub: 1,
+        }
+      }
+    );
+
+    tl.from('.section-header h2', {
+      opacity: 0,
+      y: "-40%",
+      duration: 1,
+    }, "ab");
+
+    tl.from('.section-header p', {
+      opacity: 0,
+      y: "-40%",
+      duration: 1,
+      delay: 1,
+    }, "ab");
+
+    tl2.from('.team-grid', {
+      opacity: 0,
+      y: "-20%",
+      duration: 4,
+      delay: 0.5,
+    });
+
+  }, { scope: container });
 
   return (
-    <div className="sections-container">
-      {/* Team Section */}
-      <section className="team-section">
-        <div className="section-header">
-          <h2>Meet our Amazing Team</h2>
-          <p>Squad of A'tier talents are ready to tackle any challenge you throw at them. Let's play!</p>
-        </div>
-        <div className="team-grid">
-          {teamMembers.map((member, index) => (
-            <div key={index} className={`team-member ${member.background}`}>
-              <img src={member.image || "/placeholder.svg"} alt={member.name} className="team-member-image" />
-              <h3>{member.name}</h3>
-              <p>{member.role}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+    <main ref={container}>
+      <div className="sections-container">
+        {/* Team Section */}
+        <section className="team-section">
+          <div className="section-header">
+            <h2>Meet our Amazing Team</h2>
+            <p>Squad of A'tier talents are ready to tackle any challenge you throw at them. Let's play!</p>
+          </div>
+          <div className="team-grid">
+            {teamMembers.map((member, index) => (
+              <div key={index} className={`team-member ${member.background}`}>
+                <img src={member.image || "/placeholder.svg"} alt={member.name} className="team-member-image" />
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
 
 
-      {/* CTA and Footer Section */}
+        {/* CTA and Footer Section */}
 
 
 
-    </div>
+      </div>
+    </main>
   )
 }
 

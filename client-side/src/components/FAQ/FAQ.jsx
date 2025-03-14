@@ -3,6 +3,14 @@
 import { useState } from 'react'
 import './FAQ.css'
 
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function FAQPage() {
   // State to track which FAQ is open
   const [openFAQs, setOpenFAQs] = useState({
@@ -74,66 +82,118 @@ export default function FAQPage() {
     }
   ]
 
+  const container = useRef();
+  useGSAP(() => {
+    var tl = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: '.faq-container',
+          markers: true,
+          start: "top center",
+          end: "0% center",
+          scrub: 1,
+        }
+      }
+    );
+
+    var tl2 = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: '.faq-content',
+          markers: true,
+          start: "-15% center",
+          end: "-15% center",
+          scrub: 1,
+        }
+      }
+    );
+
+    tl.from('.faq-title', {
+      opacity: 0,
+      y: "-40%",
+      duration: 1,
+    }, "ab");
+
+    tl.from('.faq-subtitle', {
+      opacity: 0,
+      y: "-40%",
+      duration: 1,
+    }, "ab");
+
+    tl.from('.faq-section-title', {
+      opacity: 0,
+      y: "-20%",
+      duration: 0.5,
+    },"ab");
+    tl2.from('.faq-list', {
+      opacity: 0,
+      y: "-20%",
+      duration: 0.2,
+    },"ab");
+  }, { scope: container });
+
   return (
-    <div className="faq-container">
-      <div className="faq-header">
-        <h1 className="faq-title">
-          <span className="question-mark left">?</span>
-          FAQs
-          <span className="question-mark right">?</span>
-        </h1>
-        <p className="faq-subtitle">Get your questions answered.</p>
-      </div>
-
-      <div className="faq-content">
-        <div className="faq-column">
-          <h2 className="faq-section-title">Basic</h2>
-          <div className="faq-list">
-            {basicFAQs.map((faq) => (
-              <div key={faq.id} className="faq-item">
-                <div 
-                  className="faq-question" 
-                  onClick={() => toggleFAQ(faq.id)}
-                >
-                  <span>{faq.question}</span>
-                  <span className="faq-icon">
-                    {openFAQs[faq.id] ? '✕' : '+'}
-                  </span>
-                </div>
-                {openFAQs[faq.id] && (
-                  <div className="faq-answer">
-                    <p>{faq.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+    <main ref={container}>
+      <div className="faq-container">
+        <div className="faq-header">
+          <h1 className="faq-title">
+            <span className="question-mark left">?</span>
+            FAQs
+            <span className="question-mark right">?</span>
+          </h1>
+          <p className="faq-subtitle">Get your questions answered.</p>
         </div>
 
-        <div className="faq-column">
-          <h2 className="faq-section-title">Other</h2>
-          <div className="faq-list">
-            {otherFAQs.map((faq) => (
-              <div key={faq.id} className="faq-item">
-                <div 
-                  className="faq-question" 
-                  onClick={() => toggleFAQ(faq.id)}
-                >
-                  <span>{faq.question}</span>
-                  <span className="faq-icon">
-                    {openFAQs[faq.id] ? '✕' : '+'}
-                  </span>
-                </div>
-                {openFAQs[faq.id] && (
-                  <div className="faq-answer">
-                    <p>{faq.answer}</p>
+        <div className="faq-content">
+          <div className="faq-column">
+            <h2 className="faq-section-title">Basic</h2>
+            <div className="faq-list">
+              {basicFAQs.map((faq) => (
+                <div key={faq.id} className="faq-item">
+                  <div
+                    className="faq-question"
+                    onClick={() => toggleFAQ(faq.id)}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-icon">
+                      {openFAQs[faq.id] ? '✕' : '+'}
+                    </span>
                   </div>
-                )}
-              </div>
-            ))}
+                  {openFAQs[faq.id] && (
+                    <div className="faq-answer">
+                      <p>{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="faq-column">
+            <h2 className="faq-section-title">Other</h2>
+            <div className="faq-list">
+              {otherFAQs.map((faq) => (
+                <div key={faq.id} className="faq-item">
+                  <div
+                    className="faq-question"
+                    onClick={() => toggleFAQ(faq.id)}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="faq-icon">
+                      {openFAQs[faq.id] ? '✕' : '+'}
+                    </span>
+                  </div>
+                  {openFAQs[faq.id] && (
+                    <div className="faq-answer">
+                      <p>{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

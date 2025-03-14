@@ -48,11 +48,13 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 30px;
+  transition: all 1s;
 }
 
 .faq-column {
   flex: 1;
   min-width: 300px;
+  transition: all 1s;
 }
 
 .faq-section-title {
@@ -60,6 +62,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
+  transition: all 1s;
 }
 
 /* FAQ items */
@@ -67,11 +70,13 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  transition : all 0.5s;
 }
 
 .faq-item {
   border-radius: 4px;
   overflow: hidden;
+  transition : all 0.5s;
 }
 
 .faq-question {
@@ -83,7 +88,7 @@
   align-items: center;
   cursor: pointer;
   font-weight: 500;
-  transition: background-color 0.2s;
+  transition: 0.5s;
 }
 
 .faq-question:hover {
@@ -100,6 +105,7 @@
   padding: 20px;
   color: #333;
   line-height: 1.6;
+  transition: all 1s;
 }
 
 /* Responsive adjustments */

@@ -11,6 +11,7 @@ import Testimonial from './components/Testimonial/Testimonial'
 import Footer from './components/Footer/Footer'
 import IntegrationsSection from './components/IntegrationsSection/IntegrationsSection'
 import Pricing from './components/Pricing/Pricing'
+import FAQ from './components/FAQ/FAQ'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <HowItWorks/>
     <IntegrationsSection/>
     <Services/>
+    <FAQ/>
     <Team/>
     <Pricing/>
     <Testimonial/>

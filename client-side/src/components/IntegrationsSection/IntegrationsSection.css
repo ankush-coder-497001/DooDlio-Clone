@@ -47,13 +47,14 @@
   top: 35%;
   left: 0%;
 }
-.paragraph {
+.paragraph1 {
   font-size: 1.2rem;
   color: white;
   text-align: center;
   width: 60%;
   margin: auto;
   margin-bottom: 40px;
+  z-index: 100;
 }
 
 .marquee-wrapper {
