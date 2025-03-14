@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 
 import FeaturesSection from './components/FeaturesSection/FeaturesSection'
 
-import HowItWorks from './components/How_It_Work/How_It_Work'
+import HowItWorks from './components/How_It_work/How_It_work'
 import Services from './components/Services/Services'
 import Team from './components/Team/Team'
 import Testimonial from './components/Testimonial/Testimonial'
