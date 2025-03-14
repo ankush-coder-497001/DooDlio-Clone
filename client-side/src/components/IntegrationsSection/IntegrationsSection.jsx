@@ -1,5 +1,6 @@
 import React from "react";
 import "./IntegrationsSection.css";
+import Oval from "./images/circled-oval.svg";
 
 const integrations = [
   {
@@ -29,12 +30,16 @@ const IntegrationsSection = () => {
     <section id="integrations" className="integrations-section">
       <div className="container-wrap">
         <div className="container integrations-container">
-          <div className="text-box integrations-text-box">
-            <h2 className="heading">Integrate Your Favorite Tools</h2>
+          <div className="text">
+            <div className="text-box integrations-text-box">
+              <h2 className="heading"><span className="heading1">Integrate Your</span> <span>Favorite Tools</span></h2>
+              <img src={Oval} alt="Oval" className="oval" />
+            </div>
+            <p className="paragraph">
+              The integrations section showcases how our product seamlessly connects with other tools.
+            </p>
           </div>
-          <p className="paragraph">
-            The integrations section showcases how our product seamlessly connects with other tools.
-          </p>
+
           <div className="marquee-wrapper">
             <div className="marquee">
               {integrations.map((item, index) => (

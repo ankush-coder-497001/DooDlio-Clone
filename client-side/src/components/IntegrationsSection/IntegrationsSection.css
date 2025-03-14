@@ -1,29 +1,58 @@
 /* Integrations.css */
 
 .integrations-section {
-  padding: 80px 20px;
-  background-color: #f9f9f9;
+  /* background-color: #ff0000; */
   text-align: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .container-wrap {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.integrations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.text
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .integrations-text-box {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
-  color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+  z-index: 10;
 }
-
+.oval
+{
+  width: 260px;
+  position: absolute;
+  z-index: 9;
+  top: 35%;
+  left: 0%;
+}
 .paragraph {
   font-size: 1.2rem;
-  color: #555;
+  color: white;
+  text-align: center;
+  width: 60%;
+  margin: auto;
   margin-bottom: 40px;
 }
 
@@ -44,7 +73,7 @@
   flex-direction: column;
   align-items: center;
   width: 250px;
-  background: #fff;
+  background: #FCFB00;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -75,21 +104,19 @@ h3 {
 
 .card-description {
   font-size: 1rem;
-  color: #666;
-  text-align: center;
-  margin-bottom: 10px;
+  color: black;
+  text-wrap: wrap;
+  text-align: left;
+  /* margin-bottom: 10px; */
 }
 
 .integration-link {
   font-size: 1rem;
-  color: #007bff;
   text-decoration: none;
+  color: black;
   font-weight: bold;
 }
 
-.integration-link:hover {
-  text-decoration: underline;
-}
 
 /* Marquee Animation */
 @keyframes marquee {
