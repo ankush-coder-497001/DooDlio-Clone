@@ -1,4 +1,4 @@
-import "./HIV.css"
+import "./HIW.css"
 
 const HowItWorks = () => {
   return (
