@@ -1,60 +1,100 @@
-import React from 'react'
-import "../../App.css"
+import styles from './Hero.module.css'
 
-function Hero() {
+export default function Hero() {
   return (
-    <section className="hero-section">
-        <div className="container">
-        <div className="hero-details-wrap">
-      <div className="hero-details">
-        <h1 className="heading h1">Connect with your customers</h1>
-      </div>
-      <div className="text-box m">
-        <p className="paragraph large">
-          Use our template to quickly and efficiently brand your growing business.
-        </p>
-        <div className="spacer _2r"></div>
-      </div>
-      <div className="hero-buttons-wrap">
-        <a href="/" className="button w-button w--current">
-          Preview Template
-        </a>
-        <a href="/admin/licensing" className="button outline w-button">
-          Learn More
-        </a>
-      </div>
-      <div className="spacer _2r"></div>
-      <p className="paragraph large">Our template used by</p>
-      <div className="logos-wrapper">
-        <div className="gradient-block-right"></div>
-        <div className="gradient-block-left"></div>
-        <div className="logos-grid-wrap">
-          {[...Array(2)].map((_, index) => (
-            <div key={index} className="w-layout-grid _6-column-grid">
-              {[...Array(6)].map((_, i) => (
-                <img
-                  key={i}
-                  src={`https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b87fa4300d381ca5846aec_placeholder-${i + 1}.svg`}
-                  loading="lazy"
-                  alt="Placeholder Logo"
-                  className={`placeholder-logo ${i === 5 ? "nexus" : ""}`}
-                />
-              ))}
+    <main className={styles.main}>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <h1 className={styles.heading}>Connect with your customers</h1>
+          <p className={styles.subheading}>
+            Use our template to quickly and efficiently brand your growing business.
+          </p>
+          <div className={styles.buttons}>
+            <button className={styles.previewButton}>Preview Template</button>
+            <button className={styles.learnButton}>Learn More</button>
+          </div>
+          
+          <div className={styles.usedBySection}>
+            <p className={styles.usedByText}>Our template used by</p>
+            <div className={styles.logoContainer}>
+              <div className={styles.logoScroll}>
+                <div className={styles.logos}>
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b87fa4300d381ca5846aec_placeholder-1.svg" 
+                    alt="Nexus Wave" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b880343e22644cfecbde8f_placeholder-2.svg" 
+                    alt="DotSquare" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b88046f5f5d1125a975078_placeholder-3.svg" 
+                    alt="Pluto Delux" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b88049754fe5eef29b7e87_placeholder-4.svg" 
+                    alt="Wiggle" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b8804a38401814faaf7292_placeholder-5.svg" 
+                    alt="SeaLife" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b8875b02fecdf8d0ff2751_placeholder-6.svg" 
+                    alt="TriCols" 
+                    className={styles.logo}
+                  />
+                </div>
+                <div className={styles.logos}>
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b87fa4300d381ca5846aec_placeholder-1.svg" 
+                    alt="Nexus Wave" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b880343e22644cfecbde8f_placeholder-2.svg" 
+                    alt="DotSquare" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b88046f5f5d1125a975078_placeholder-3.svg" 
+                    alt="Pluto Delux" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b88049754fe5eef29b7e87_placeholder-4.svg" 
+                    alt="Wiggle" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b8804a38401814faaf7292_placeholder-5.svg" 
+                    alt="SeaLife" 
+                    className={styles.logo}
+                  />
+                  <img 
+                    src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b8875b02fecdf8d0ff2751_placeholder-6.svg" 
+                    alt="TriCols" 
+                    className={styles.logo}
+                  />
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
-          <div className="hero-image-wrapper">
-            <img
-              src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d41e81b5bebfb7d648c79f_hero-illustration-v2.svg"
-              alt="Hero Illustration"
-              className="hero-image"
-            />
           </div>
         </div>
-      </section>
+        
+        <div className={styles.illustration}>
+          <img 
+            src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d41e81b5bebfb7d648c79f_hero-illustration-v2.svg" 
+            alt="Hero Illustration" 
+            className={styles.heroImage}
+          />
+        </div>
+      </div>
+    </main>
   )
 }
-
-export default Hero
