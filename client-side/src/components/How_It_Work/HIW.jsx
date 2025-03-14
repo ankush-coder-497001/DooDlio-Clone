@@ -1,3 +1,4 @@
+<<<<<<< HEAD:client-side/src/components/How_It_Work/How_It_work.jsx
 import "./How_It_work.css"
 import { useRef } from 'react';
 import gsap from 'gsap';
@@ -6,6 +7,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
 gsap.registerPlugin(ScrollTrigger);
+=======
+import "./HIW.css"
+>>>>>>> 23fdc9d868175a73a359f13c3fd154536082c47a:client-side/src/components/How_It_Work/HIW.jsx
 
 const HowItWorks = () => {
 
