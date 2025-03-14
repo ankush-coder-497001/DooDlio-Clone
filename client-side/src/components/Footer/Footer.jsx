@@ -5,7 +5,7 @@ const footerLinks = {
   Pages: ["Home"],
   Admin: ["Style Guide", "Licensing", "Change Log", "Password", "404"],
   Social: ["Instagram", "Facebook", "Youtube", "Linkedin", "X"],
-  Contact: ["Email Me", "+68 24 24 12 45"],
+  Contact: ["Email Me", "+67 24 24 12 45"],
 }
 function Footer() {
   return (
