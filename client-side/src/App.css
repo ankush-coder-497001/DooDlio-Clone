@@ -3436,7 +3436,6 @@ p {
 
 .header {
   z-index: 100000;
-  border-bottom: 3px solid var(--white);
   background-color: var(--accent);
   position: sticky;
   inset: 0% 0% auto

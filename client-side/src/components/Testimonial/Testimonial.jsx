@@ -37,13 +37,7 @@ const testimonials = [
     quote:
       "Absolutely amazing! The templates are not only visually stunning but also SEO-friendly, which has significantly improved my site's traffic and engagement has skyrocketed.",
   },
-  {
-    name: "Katie Brooks",
-    role: "Junior Designer",
-    image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66e025f33e0bf52bf9ccb7fa_testimonial-8-p-500.jpg",
-    quote:
-      "I was able to create a professional-looking website without any coding knowledge, thanks to the user-friendly templates. Highly recommended, my business is growing!",
-  },
+ 
 ]
 function Testimonial() {
 
@@ -120,12 +114,22 @@ function Testimonial() {
               <p className="testimonial-quote">"{testimonial.quote}"</p>
             </div>
           ))}
+           <div  className="t-emoji" style={{}}>
+            
+             
+            </div>
+           <div  className="testimonial-card">
+              <div className="testimonial-header">
+                <img src={"https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66e025f33e0bf52bf9ccb7fa_testimonial-8-p-500.jpg" } alt="Katie Brooks" />
+                <div>
+                  <h3>Katie Brooks</h3>
+                  <p>unior Designer</p>
+                </div>
+              </div>
+              <p className="testimonial-quote">I was able to create a professional-looking website without any coding knowledge, thanks to the user-friendly templates. Highly recommended, my business is growing!</p>
+            </div>
         </div>
-        <div className="emoji-decoration">
-          <span>😊</span>
-          <span>😄</span>
-          <span>🙂</span>
-        </div>
+       
       </section>
     </main>
   )

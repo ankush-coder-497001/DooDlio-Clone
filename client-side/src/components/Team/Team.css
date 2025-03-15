@@ -3,6 +3,12 @@
   font-family: Arial, sans-serif;
 }
 
+.t-emoji{
+  background-image: url("https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66e0307daf39a6840219c859_some-4.svg");
+  background-position:center center;
+  background-size: cover;
+}
+
 /* Common Styles */
 .section-header {
   text-align: center;
