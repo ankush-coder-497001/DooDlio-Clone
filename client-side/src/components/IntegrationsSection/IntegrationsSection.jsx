@@ -93,6 +93,15 @@ const IntegrationsSection = () => {
                 ))}
               </div>
             </div>
+
+            <div className="bottom_text">
+              <h1>wait, there's more..</h1>
+              <img
+                src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d2e8f737b0c44d92577c8a_arrow-down.svg"
+                alt="arrow"
+                className="arrow contact-sales"
+              />
+            </div>
           </div>
         </div>
       </section>

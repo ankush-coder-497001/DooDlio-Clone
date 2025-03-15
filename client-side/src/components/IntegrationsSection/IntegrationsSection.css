@@ -1,29 +1,31 @@
 /* Integrations.css */
 
 .integrations-section {
-  /* background-color: #ff0000; */
   text-align: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container-wrap {
-  max-width: 1200px;
+  max-width: 96%;
   margin: 0 auto;
+  height: 100%;
 }
+
 .integrations-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.text
-{
+
+.text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
+
 .integrations-text-box {
   margin-bottom: 20px;
   position: relative;
@@ -39,14 +41,15 @@
   position: relative;
   z-index: 10;
 }
-.oval
-{
+
+.oval {
   width: 260px;
   position: absolute;
   z-index: 9;
   top: 35%;
   left: 0%;
 }
+
 .paragraph1 {
   font-size: 1.2rem;
   color: white;
@@ -61,45 +64,41 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  width: 90%;
 }
 
 .marquee {
   display: flex;
   gap: 20px;
   animation: marquee 20s linear infinite;
+
 }
 
 .marquee-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 250px;
+  align-items: start;
+  width: 280px;
   background: #FCFB00;
   border-radius: 12px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.marquee-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .card-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .integration-logo {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #222;
 }
 
@@ -117,49 +116,113 @@ h3 {
   color: black;
   font-weight: bold;
 }
-
-
+.bottom_text
+{
+  position: relative;
+  width: 100%;
+}
+.bottom_text h1
+{
+  color: #FCFB00;
+  font-size: 2.6rem;
+  margin-top: 20px;
+  text-transform: capitalize;
+  position: absolute;
+  right: 10%;
+  text-wrap: nowrap;
+}
+.bottom_text .arrow
+{
+  height: 300px;
+  position: absolute;
+  top: 20px;
+  right: 4%;
+}
 /* Marquee Animation */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 900px) {
+  .container-wrap {
+    min-height: 120vh;
+  }
+} */
+
+@media (max-width: 1100px) {
   .heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
-  .paragraph {
-    font-size: 1rem;
+  .paragraph1 {
+    font-size: 1.25rem;
+    width: 100%;
   }
 
-  .marquee {
-    flex-wrap: nowrap;
-    animation-duration: 15s;
+  .oval {
+    width: 170px;
+    top: 50%;
+    left: 0%;
+  }
+
+  .marquee-wrapper {
+    width: 100%;
+    margin: auto;
   }
 
   .marquee-card {
-    width: 220px;
+    width: 310px;
+    height: 230px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
   }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+
+  .integration-logo {
+    width: 28px;
+    height: 28px;
+    margin-left: -40px;
+  }
+
+  .integration-link {
+    font-size: 1.04rem;
+  }
+
+  .bottom_text
+{
+  position: relative;
+  width: 100%;
 }
-
-@media (max-width: 480px) {
-  .heading {
-    font-size: 1.8rem;
-  }
-
-  .paragraph {
-    font-size: 0.9rem;
-  }
-
-  .marquee-card {
-    width: 200px;
-    padding: 15px;
-  }
+.bottom_text h1
+{
+  color: #FCFB00;
+  font-size: 2.2rem;
+  margin-top: 20px;
+  text-transform: capitalize;
+  position: absolute;
+  right: 2%;
+  text-wrap: nowrap;
+}
+.bottom_text .arrow
+{
+  height: 300px;
+  position: absolute;
+  top: 20px;
+  right: 4%;
+}
 }

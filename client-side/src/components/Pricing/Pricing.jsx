@@ -72,7 +72,7 @@ const Pricing = () => {
             duration: 1,
         }, "ab");
 
-        tl.from('.pricing-paragraph', {
+        tl.from('.price_paragraph', {
             opacity: 0,
             y: "-40%",
             duration: 1,
@@ -98,7 +98,7 @@ const Pricing = () => {
                             <img className="circle" src={circle} alt="" />
                             <h2 className="heading pricing-heading">Pricing that just fits</h2>
                         </div>
-                        <p id="pricing-paragraph" className="paragraph pricing-paragraph">
+                        <p className="price_paragraph">
                             Our pricing plans cater to diverse needs, offering flexible options to suit your budget and requirements.
                         </p>
                     </div>

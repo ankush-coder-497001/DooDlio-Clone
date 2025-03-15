@@ -1,202 +1,214 @@
 /* Pricing.css */
 
 .pricing-section {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .pricing-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
-.text-box
-{
-    position: relative;
+
+.pricing-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
-  .circle
-  {
-    width: 140px;
-    height: 140px;
-    position: absolute;
-    top: -30px;
-    left: 80%;
-  }
+
+.text-box {
+  position: relative;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -30px;
+  left: 80%;
+}
+
+.pricing-heading {
+  font-weight: 700;
+  color: #ffff;
+  font-size: 4rem;
+}
+
+.text .price_paragraph {
+  font-size: 1.3rem;
+  width: 38.4vw;
+  color: #ffff;
+  margin-bottom: 40px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-card.dark {
+  background: transparent;
+  color: #fff;
+}
+
+.popular-wrap {
+  font-weight: 500;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  color: #333;
+  background: #FCFB00;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.popular-wrap.outlined {
+  background: #eee;
+
+}
+
+.plan-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.heading-71 {
+  font-size: 1.8rem !important;
+  margin: 10px 0;
+}
+
+.light_color {
+  color: white;
+}
+
+.pricing-wrapper {
+  margin-top: 10px;
+}
+
+.price_heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.price_popular {
+  color: #FCFB00;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: #1F2428;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bottom_heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button.outline {
+  border: 0px solid #1F2428;
+  padding: 20px 40px;
+  background: transparent;
+}
+
+.button.outline:hover {
+  background: #1F2428;
+  color: #fff;
+}
+
+.button.light {
+  background: white;
+  color: #1F2428;
+  padding: 20px 35px;
+}
+
+.button.light:hover {
+  background: #1F2428;
+  color: white;
+}
+
+.button.accent {
+  background: #FCFB00;
+  color: black;
+}
+
+.contact-sales-wrap {
+  margin-top: 20px;
+}
+
+.arrow.contact-sales {
+  width: 100px;
+  margin-top: -45px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .pricing-heading {
-    font-weight: 700;
-    color: #ffff;
-    font-size: 4rem;
+    font-size: 2rem;
   }
-  
-  .text .pricing-paragraph {
-    font-size: 1.3rem;
-    width: 60%;
-    color: #ffff;
-    margin-bottom: 40px;
+
+  .pricing-paragraph {
+    font-size: 1rem;
   }
-  
+
   .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
+    grid-template-columns: 1fr;
   }
-  
+
   .pricing-card {
-    background: #fff;
-    border-radius: 25px;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    padding: 20px;
   }
-  
-  .pricing-card.dark {
-    background: transparent;
-    color: #fff;
+}
+
+@media (max-width: 480px) {
+  .pricing-heading {
+    font-size: 2.1rem;
   }
-  
-  .pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+  .text .price_paragraph {
+    font-size: 1.3rem;
+    width: 80.4vw;
   }
-  
-  .popular-wrap {
-    font-weight: 500;
-    width: 100px;
-    height: 30px;
-    margin-bottom: 10px;
-    color: #333;
-    background: #FCFB00;
-    border-radius: 10px;
+
+  .button {
+    padding: 10px 15px;
     font-size: 0.9rem;
   }
 
-  .popular-wrap.outlined {
-    background: #eee;
-    
+  .circle {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    left: 80%;
   }
-  
-  .plan-icon {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
+
+  .pricing-grid {
+    width: 90%;
   }
-  
-  .heading-71 {
-    font-size: 1.8rem !important;
-    margin: 10px 0;
-  }
-  .light_color {
-    color: white;
-  }
-  .pricing-wrapper {
-    margin-top: 10px;
-  }
-  
-  .price_heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .price_popular
-  {
-    color: #FCFB00;
-  }
-  
-  .paragraph {
-    font-size: 1rem;
-    color: #1F2428;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .bottom_heading
-  {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-    color: white;
-  }
-  .button {
-    display: inline-block;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .button.outline {
-    border: 0px solid #1F2428;
-    padding: 20px 40px;
-    background: transparent;
-  }
-  
-  .button.outline:hover {
-    background: #1F2428;
-    color: #fff;
-  }
-  
-  .button.light {
-    background: white;
-    color: #1F2428;
-    padding: 20px 35px;
-  }
-  
-  .button.light:hover {
-    background: #1F2428;
-    color: white;
-  }
-  
-  .button.accent {
-    background: #FCFB00;
-    color: black;
-  }
-  
-  .contact-sales-wrap {
-    margin-top: 20px;
-  }
-  
-  .arrow.contact-sales {
-    width: 100px;
-    margin-top: -45px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .pricing-heading {
-      font-size: 2rem;
-    }
-  
-    .pricing-paragraph {
-      font-size: 1rem;
-    }
-  
-    .pricing-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .pricing-card {
-      padding: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .pricing-heading {
-      font-size: 1.8rem;
-    }
-  
-    .pricing-paragraph {
-      font-size: 0.9rem;
-    }
-  
-    .button {
-      padding: 10px 15px;
-      font-size: 0.9rem;
-    }
-  }
-  
+
+}

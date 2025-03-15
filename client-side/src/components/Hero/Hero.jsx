@@ -2,7 +2,7 @@ import styles from './Hero.module.css'
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-
+import blob from "./images/white-blob.svg";
 export default function Hero() {
 
   gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
@@ -47,6 +47,7 @@ export default function Hero() {
       <div className={styles.main}>
         <div className={styles.container}>
           <div className={styles.content}>
+            <img src={blob} alt="blob" className={styles.blob} />
             <h1 id='hero_heading' className={styles.heading}>Connect with your customers</h1>
             <p id='hero_paragraph' className={styles.subheading}>
               Use our template to quickly and efficiently brand your growing business.

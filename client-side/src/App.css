@@ -3359,7 +3359,8 @@ p {
   text-decoration: none;
   display: block;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+  height: 20px;
 }
 
 .link-text {
@@ -3371,9 +3372,17 @@ p {
   display: flex;
   position: relative;
   overflow: visible;
-  transform: perspective(725px)
+  transform: perspective(725px);
+  transition: all 0.5s ease
 }
-
+.navigation-link:hover .link-text1
+{
+  transform: translateY(-100%);
+}
+.navigation-link:hover .link-text2
+{
+  transform: translateY(-100%);
+}
 .link-text.cc-hidden {
   position: absolute;
   bottom: -100%;
@@ -3442,15 +3451,9 @@ p {
 }
 
 .navigation {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  flex: 1;
-  grid-template-rows: auto;
-  grid-template-columns: 1.75fr 1fr 1.75fr;
-  grid-auto-columns: 1fr;
+  width: 90vw;
+  display: flex;
   justify-content: space-between;
-  place-items: center stretch;
-  display: grid
 }
 
 .mobile-menu {
