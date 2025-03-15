@@ -11,7 +11,8 @@ import Testimonial from './components/Testimonial/Testimonial'
 import Footer from './components/Footer/Footer'
 import IntegrationsSection from './components/IntegrationsSection/IntegrationsSection'
 import Pricing from './components/Pricing/Pricing'
-
+import HowItWorks from './components/How_It_Work/HIW'
+import FAQ from './components/FAQ/FAQ'
 function App() {
 
   return (
