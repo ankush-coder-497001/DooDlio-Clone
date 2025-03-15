@@ -88,7 +88,7 @@ export default function FAQPage() {
       {
         scrollTrigger: {
           trigger: '.faq-container',
-          markers: true,
+          // markers: true,
           start: "top center",
           end: "0% center",
           scrub: 1,
@@ -96,17 +96,7 @@ export default function FAQPage() {
       }
     );
 
-    var tl2 = gsap.timeline(
-      {
-        scrollTrigger: {
-          trigger: '.faq-content',
-          markers: true,
-          start: "-15% center",
-          end: "-15% center",
-          scrub: 1,
-        }
-      }
-    );
+
 
     tl.from('.faq-title', {
       opacity: 0,
@@ -120,21 +110,43 @@ export default function FAQPage() {
       duration: 1,
     }, "ab");
 
-    tl.from('.faq-section-title', {
-      opacity: 0,
-      y: "-20%",
-      duration: 0.5,
-    },"ab");
-    tl2.from('.faq-list', {
-      opacity: 0,
-      y: "-20%",
-      duration: 0.2,
-    },"ab");
+
+    // var tl2 = gsap.timeline(
+    //   {
+    //     scrollTrigger: {
+    //       trigger: '.faq-item',
+    //       markers : true,
+    //       start : "top center",
+    //       end : "10% center",
+    //       scrub:true,
+    //     }
+    //   }
+    // );
+
+    // tl.from('.faq-section-title', {
+    //   opacity: 0,
+    //   y: "-20%",
+    //   duration: 0.5,
+    // });
+
+    // tl.from('.faq-item-basic', {
+    //   opacity: 0,
+    //   y: "-100px",
+    //   duration: 1,
+    //   delay:1.5,
+    //   stagger:0.5,
+    // },"ab");
+    // tl2.from('.faq-item-other', {
+    //   opacity: 0,
+    //   y: "-100px",
+    //   duration: 1,
+    //   stagger:0.2,
+    // },"ab");
   }, { scope: container });
 
   return (
     <main ref={container}>
-      <div className="faq-container">
+      <div id='faq' className="faq-container">
         <div className="faq-header">
           <h1 className="faq-title">
             <span className="question-mark left">?</span>
@@ -149,7 +161,7 @@ export default function FAQPage() {
             <h2 className="faq-section-title">Basic</h2>
             <div className="faq-list">
               {basicFAQs.map((faq) => (
-                <div key={faq.id} className="faq-item">
+                <div key={faq.id} className="faq-item faq-item-basic">
                   <div
                     className="faq-question"
                     onClick={() => toggleFAQ(faq.id)}
@@ -173,7 +185,7 @@ export default function FAQPage() {
             <h2 className="faq-section-title">Other</h2>
             <div className="faq-list">
               {otherFAQs.map((faq) => (
-                <div key={faq.id} className="faq-item">
+                <div key={faq.id} className="faq-item faq-item-other">
                   <div
                     className="faq-question"
                     onClick={() => toggleFAQ(faq.id)}

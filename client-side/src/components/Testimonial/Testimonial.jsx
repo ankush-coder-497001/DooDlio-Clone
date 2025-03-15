@@ -96,10 +96,10 @@ function Testimonial() {
         <div className="section-header">
           <h2>
             We are met with cheers
-            <br />
+            <br /><br />
             from the crowd!
           </h2>
-          <span className="thumbs-up">👍</span>
+          <span className="thumbs-up"><img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66e02f941b7b083ab4f7d83f_thumbs-up-light.svg" alt="" /></span>
         </div>
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (

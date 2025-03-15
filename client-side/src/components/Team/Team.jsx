@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import yellow from "./images/member-card.svg"
+import dark from "./images/66d8250558f119dd651c5bfc_member-card-bg-shape-1.svg"
 
 gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies 
 gsap.registerPlugin(ScrollTrigger);
@@ -99,7 +101,7 @@ export default function Team() {
 
   return (
     <main ref={container}>
-      <div className="sections-container">
+      <div id="team" className="sections-container">
         {/* Team Section */}
         <section className="team-section">
           <div className="section-header">
@@ -109,9 +111,12 @@ export default function Team() {
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div key={index} className={`team-member ${member.background}`}>
+                {<img className="img-back" src={member.background === "yellow" ? yellow : dark} />}
                 <img src={member.image || "/placeholder.svg"} alt={member.name} className="team-member-image" />
-                <h3>{member.name}</h3>
-                <p>{member.role}</p>
+                <div className="team-member-info">
+                  <h3>{member.name}</h3>
+                  <p>{member.role}</p>
+                </div>
               </div>
             ))}
           </div>

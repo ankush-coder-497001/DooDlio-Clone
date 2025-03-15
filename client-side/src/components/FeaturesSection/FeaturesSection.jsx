@@ -56,7 +56,13 @@ const FeaturesSection = () => {
       opacity: 0,
       y: "-40%",
       duration: 1,
-    }, "ab");
+    });
+    tl2.to('.card-paragraph', {
+      opacity: 1,
+      y: 0,
+      duration: 4,
+      delay: 2,
+    });
   }, { scope: container });
 
   return (
@@ -92,16 +98,19 @@ const FeaturesSection = () => {
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d868aa8ff33370b43d811b_support.svg"
               title="Support"
               description="Reach out and we will answer any questions on how to use the template."
+              middle="false"
             />
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d865e56357d6565e7bc63f_responsive.svg"
               title="Responsive"
               description="Use this template on any screen size as it's flexible and optimized."
+              middle="true"
             />
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d861e996beff6a63c30e97_pricing-label.png"
               title="Affordable Pricing"
               description="Doodlio template comes with an affordable pricing that fits anyone."
+              middle="bottom"
             />
           </div>
         </div>
@@ -110,7 +119,7 @@ const FeaturesSection = () => {
   );
 };
 
-const FeatureCard = ({ icon, title, description }) => {
+const FeatureCard = ({ icon, title, description, middle }) => {
   return (
     <div className="feature-card">
       <img src={icon} alt={title} className="feature-card-icon" />
@@ -119,7 +128,7 @@ const FeatureCard = ({ icon, title, description }) => {
       <img
         src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66c7140403f4ce1c8aa304ad_flower.svg"
         alt=""
-        className="flower-graphic"
+        className={`flower-graphic ${middle === "true" ? "flower-graphic-middle" : middle === "bottom" ? "flower-graphic-bottom" : ""}`}
       />
     </div>
   );

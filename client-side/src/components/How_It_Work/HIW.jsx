@@ -60,7 +60,7 @@ const HowItWorks = () => {
 
   return (
     <main ref={container}>
-      <div className="how-it-works-container">
+      <div id='how-it-works' className="how-it-works-container">
         <div className="how-it-works-content">
           <h1 className="main-heading">How it Works</h1>
           <p className="subtitle">

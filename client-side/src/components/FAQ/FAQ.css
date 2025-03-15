@@ -1,6 +1,6 @@
 /* Main container */
 .faq-container {
-  background-color: #ffff54;
+  background-color: #FCFB00;
   min-height: 100vh;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -24,16 +24,20 @@
 .question-mark {
   font-size: 48px;
   color: white;
+  font-size: 5rem;
   position: absolute;
   top: -10px;
 }
 
 .question-mark.left {
-  left: -40px;
+  top: 5px;
+  left: -50px;
+  font-size: 5rem;
+  transform: rotateY(180deg) rotate(30deg);
 }
 
 .question-mark.right {
-  right: -40px;
+  right: -50px;
 }
 
 .faq-subtitle {
