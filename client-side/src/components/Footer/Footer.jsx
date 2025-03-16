@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Team/Team.css"
+import "./Footer.css"
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';

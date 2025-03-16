@@ -1,0 +1,1149 @@
+/* Responsive CSS for all device types */
+
+/* Base responsive styles */
+:root {
+  --container-padding: 20px;
+}
+
+/* Ensure proper viewport settings */
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin: 0 auto;
+  }
+}
+
+/* Large Desktop (1200px - 1440px) */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  /* Hero section adjustments */
+  .hero-section {
+    padding: 100px 0;
+  }
+  
+  /* Adjust grid layouts */
+  ._2-column-grid,
+  ._3-column-grid,
+  ._6-column-grid {
+    gap: 30px;
+  }
+  
+  /* Adjust font sizes */
+  .heading.h1 {
+    font-size: 3.5rem;
+  }
+  
+  .heading.h2 {
+    font-size: 2.8rem;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    min-height: auto !important;
+    padding: 80px 2rem !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    height: auto !important;
+    gap: 1.5rem !important;
+  }
+  
+  .team-member-image {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+  }
+  
+  /* Footer specific fixes */
+  .footer {
+    height: auto !important;
+    padding: 4rem 2rem !important;
+  }
+  
+  .footer-content {
+    flex-direction: row !important;
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  /* Adjust grid layouts */
+  ._3-column-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Adjust feature cards */
+  .feature-card {
+    padding: 30px;
+  }
+  
+  /* Adjust pricing grid */
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Adjust team grid */
+  .team-card {
+    padding: 25px;
+  }
+  
+  /* Adjust testimonial section */
+  .testimonial-card {
+    padding: 30px;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    min-height: auto !important;
+    padding: 70px 2rem !important;
+  }
+  
+  .container {
+    flex-direction: row !important;
+    gap: 1rem !important;
+  }
+  
+  .heading {
+    font-size: 3.5rem !important;
+  }
+  
+  .heroImage {
+    width: 450px !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    height: auto !important;
+    gap: 1.5rem !important;
+  }
+  
+  .team-member {
+    padding: 1.5rem !important;
+  }
+  
+  .team-member-image {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+  }
+  
+  .img-back {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  
+  /* Footer specific fixes */
+  .footer {
+    height: auto !important;
+    padding: 4rem 2rem !important;
+  }
+  
+  .footer-content {
+    flex-direction: row !important;
+    gap: 2rem !important;
+  }
+  
+  .footer-links {
+    flex-wrap: wrap !important;
+    gap: 2rem !important;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  /* Navigation adjustments */
+  .navigation-left,
+  .navigation-right .navigation-menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  /* Hero section adjustments */
+  .hero-section {
+    padding: 80px 0;
+  }
+  
+  ._2-column-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-image-wrapper {
+    order: -1;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  
+  .hero-details-wrap {
+    text-align: center;
+  }
+  
+  .hero-buttons-wrap {
+    justify-content: center;
+  }
+  
+  /* Features section adjustments */
+  ._3-column-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  /* How it works section adjustments */
+  .stage-card {
+    padding: 25px;
+  }
+  
+  /* Integrations section adjustments */
+  .marquee-card {
+    min-width: 250px;
+  }
+  
+  /* Services section adjustments */
+  ._3-2-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  /* Team section adjustments */
+  .team-card {
+    padding: 20px;
+  }
+  
+  /* Pricing section adjustments */
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  /* FAQ section adjustments */
+  ._2-2-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* CTA section adjustments */
+  .cta-wrap {
+    padding: 60px 30px;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    min-height: auto !important;
+    padding: 60px 1.5rem !important;
+  }
+  
+  .container {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  
+  .content {
+    order: 1 !important;
+    max-width: 100% !important;
+  }
+  
+  .illustration {
+    order: 0 !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .heading {
+    font-size: 3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .buttons {
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .heroImage {
+    width: 400px !important;
+    max-width: 100% !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    height: auto !important;
+    gap: 1.5rem !important;
+  }
+  
+  .team-member {
+    padding: 1.5rem !important;
+  }
+  
+  .team-member-image {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+  }
+  
+  .img-back {
+    width: 400px !important;
+    height: 400px !important;
+  }
+  
+  /* Footer specific fixes */
+  .footer {
+    height: auto !important;
+    padding: 3rem 1.5rem !important;
+  }
+  
+  .footer-content {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  .footer-brand {
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .footer-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+  }
+  
+  .cta-section {
+    width: 90vw !important;
+    margin-left: 5% !important;
+    padding: 3rem 1.5rem !important;
+  }
+}
+
+/* Mobile Large (576px - 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  /* Typography adjustments */
+  .heading.h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+  
+  .heading.h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  
+  .heading.h3 {
+    font-size: 1.8rem;
+  }
+  
+  .paragraph.large {
+    font-size: 1rem;
+  }
+  
+  /* Hero section adjustments */
+  .hero-section {
+    padding: 60px 0;
+  }
+  
+  .hero-image-wrapper {
+    max-width: 100%;
+  }
+  
+  /* Features section adjustments */
+  ._3-column-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .feature-card {
+    padding: 25px;
+  }
+  
+  /* How it works section adjustments */
+  .stage-card {
+    padding: 20px;
+  }
+  
+  /* Integrations section adjustments */
+  .marquee-content {
+    gap: 20px;
+  }
+  
+  .marquee-card {
+    min-width: 200px;
+    padding: 20px;
+  }
+  
+  /* Services section adjustments */
+  .service-wrap {
+    padding: 25px;
+  }
+  
+  /* Team section adjustments */
+  .team-card-wrap {
+    padding: 20px;
+  }
+  
+  /* Pricing section adjustments */
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .pricing-card {
+    padding: 30px;
+  }
+  
+  /* Testimonial section adjustments */
+  .testimonial-card {
+    padding: 25px;
+  }
+  
+  /* Footer adjustments */
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    min-height: auto !important;
+    padding: 50px 1rem !important;
+  }
+  
+  .heading {
+    font-size: 2.5rem !important;
+  }
+  
+  .subheading {
+    font-size: 1.1rem !important;
+  }
+  
+  .buttons {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  
+  .previewButton, .learnButton {
+    width: 100% !important;
+  }
+  
+  .heroImage {
+    width: 350px !important;
+  }
+  
+  .usedBySection {
+    margin-top: 1.5rem !important;
+  }
+  
+  .usedByText {
+    font-size: 1rem !important;
+  }
+  
+  .logo {
+    height: 12px !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+    gap: 1.5rem !important;
+  }
+  
+  .team-member {
+    padding: 1.5rem !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+  
+  .team-member-image {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+  }
+  
+  .img-back {
+    width: 350px !important;
+    height: 350px !important;
+  }
+  
+  .team-member-info {
+    padding: 5px !important;
+  }
+  
+  .team-member-info h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .section-header p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Footer specific fixes */
+  .footer {
+    height: auto !important;
+    padding: 2.5rem 1rem !important;
+  }
+  
+  .footer-content {
+    flex-direction: column !important;
+  }
+  
+  .footer-brand {
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .footer-brand h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .footer-brand p {
+    font-size: 0.8rem !important;
+  }
+  
+  .footer-links {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  
+  .footer-column {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .footer-link {
+    justify-content: center !important;
+  }
+  
+  .cta-section {
+    width: 95vw !important;
+    margin-left: 2.5% !important;
+    padding: 2rem 1rem !important;
+    border-radius: 20px !important;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .cta-buttons {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .membershape {
+    top: -150px !important;
+    right: -100px !important;
+    height: 350px !important;
+  }
+}
+
+/* Mobile Small (320px - 575px) */
+@media screen and (max-width: 575px) {
+  :root {
+    --container-padding: 15px;
+  }
+  
+  .container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  
+  /* Typography adjustments */
+  .heading.h1 {
+    font-size: 2.2rem;
+  }
+  
+  .heading.h2 {
+    font-size: 1.8rem;
+  }
+  
+  .heading.h3 {
+    font-size: 1.5rem;
+  }
+  
+  .heading.h4 {
+    font-size: 1.3rem;
+  }
+  
+  .paragraph {
+    font-size: 0.9rem;
+  }
+  
+  .paragraph.large {
+    font-size: 1rem;
+  }
+  
+  /* Button adjustments */
+  .button, 
+  .small-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .hero-buttons-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Hero section adjustments */
+  .hero-section {
+    padding: 40px 0;
+  }
+  
+  /* Features section adjustments */
+  .feature-card {
+    padding: 20px;
+  }
+  
+  /* How it works section adjustments */
+  .stage-card {
+    padding: 15px;
+  }
+  
+  /* Integrations section adjustments */
+  .marquee-card {
+    min-width: 180px;
+    padding: 15px;
+  }
+  
+  /* Services section adjustments */
+  .service-wrap {
+    padding: 20px;
+  }
+  
+  /* Team section adjustments */
+  .team-card-wrap {
+    padding: 15px;
+  }
+  
+  /* Pricing section adjustments */
+  .pricing-card {
+    padding: 25px;
+  }
+  
+  /* Testimonial section adjustments */
+  .testimonial-card {
+    padding: 20px;
+  }
+  
+  /* FAQ section adjustments */
+  .faq-item-question {
+    padding: 15px;
+  }
+  
+  .faq-item-answer {
+    padding: 0 15px 15px;
+  }
+  
+  /* CTA section adjustments */
+  .cta-wrap {
+    padding: 40px 20px;
+  }
+  
+  /* Footer adjustments */
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    min-height: auto !important;
+    padding: 40px 1rem !important;
+  }
+  
+  .heading {
+    font-size: 2rem !important;
+  }
+  
+  .subheading {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .buttons {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .previewButton, .learnButton {
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .heroImage {
+    width: 280px !important;
+  }
+  
+  .usedBySection {
+    margin-top: 1.5rem !important;
+  }
+  
+  .usedByText {
+    font-size: 1rem !important;
+  }
+  
+  .logo {
+    height: 12px !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-section {
+    padding: 3rem 1rem !important;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+    gap: 1.5rem !important;
+  }
+  
+  .team-member {
+    padding: 1rem !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  .team-member-image {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+  }
+  
+  .img-back {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  
+  .team-member-info {
+    padding: 5px !important;
+  }
+  
+  .team-member-info h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .section-header p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Footer specific fixes */
+  .footer {
+    height: auto !important;
+    padding: 2rem 1rem !important;
+  }
+  
+  .footer-content {
+    flex-direction: column !important;
+  }
+  
+  .footer-brand {
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .footer-brand h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .footer-brand p {
+    font-size: 0.8rem !important;
+  }
+  
+  .footer-links {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  
+  .footer-column {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .footer-link {
+    justify-content: center !important;
+  }
+  
+  .cta-section {
+    width: 95vw !important;
+    margin-left: 2.5% !important;
+    padding: 2rem 1rem !important;
+    border-radius: 20px !important;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .cta-buttons {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .membershape {
+    top: -150px !important;
+    right: -100px !important;
+    height: 350px !important;
+  }
+}
+
+/* Fix for mobile menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-link:hover {
+  background-color: #f5f5f5;
+}
+
+.mobile-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Additional responsive fixes */
+@media screen and (max-width: 768px) {
+  /* Fix for navigation on mobile */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .navigation-left,
+  .navigation-right .navigation-menu {
+    display: none;
+  }
+  
+  .navigation-middle {
+    margin: 0 auto;
+  }
+  
+  .navigation-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Fix for images */
+  img {
+    height: auto;
+  }
+  
+  /* Fix for grids */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Fix for spacing */
+  .spacer {
+    height: 30px !important;
+  }
+  
+  /* Fix for text alignment */
+  .text-box {
+    text-align: center;
+  }
+}
+
+/* Fix for extra small devices */
+@media screen and (max-width: 375px) {
+  .heading.h1 {
+    font-size: 2rem;
+  }
+  
+  .heading.h2 {
+    font-size: 1.6rem;
+  }
+  
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .feature-card,
+  .service-wrap,
+  .team-card-wrap,
+  .pricing-card,
+  .testimonial-card {
+    padding: 15px;
+  }
+  
+  /* Hero section specific fixes */
+  .heading {
+    font-size: 1.8rem !important;
+  }
+  
+  .subheading {
+    font-size: 0.9rem !important;
+  }
+  
+  .heroImage {
+    width: 240px !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-member {
+    padding: 0.75rem !important;
+    max-width: 240px !important;
+  }
+  
+  .img-back {
+    width: 240px !important;
+    height: 240px !important;
+  }
+  
+  .team-member-info h3 {
+    font-size: 1rem !important;
+  }
+  
+  .team-member-info p {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Footer specific fixes */
+  .footer-brand h1 {
+    font-size: 1.6rem !important;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Fix for landscape mode on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    padding: 30px 0;
+  }
+  
+  .mobile-menu {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    padding: 30px 1rem !important;
+  }
+  
+  .container {
+    flex-direction: row !important;
+    gap: 1rem !important;
+  }
+  
+  .content {
+    order: 0 !important;
+    max-width: 50% !important;
+  }
+  
+  .illustration {
+    order: 1 !important;
+    margin-bottom: 0 !important;
+    max-width: 50% !important;
+  }
+  
+  .heading {
+    font-size: 2rem !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+  /* Footer specific fixes */
+  .footer-content {
+    flex-direction: row !important;
+  }
+  
+  .footer-links {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+/* Fix for high-resolution displays */
+@media screen and (min-width: 1921px) {
+  .container {
+    max-width: 1600px;
+  }
+  
+  .heading.h1 {
+    font-size: 4.5rem;
+  }
+  
+  .heading.h2 {
+    font-size: 3.5rem;
+  }
+  
+  /* Hero section specific fixes */
+  .main {
+    min-height: 100vh !important;
+  }
+  
+  .container {
+    max-width: 1600px !important;
+  }
+  
+  .heading {
+    font-size: 5rem !important;
+  }
+  
+  .subheading {
+    font-size: 1.5rem !important;
+  }
+  
+  .heroImage {
+    width: 600px !important;
+  }
+  
+  /* Team section specific fixes */
+  .team-grid {
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+  }
+  
+  .section-header h2 {
+    font-size: 4rem !important;
+  }
+  
+  .section-header p {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* Fix for print media */
+@media print {
+  .mobile-menu,
+  .hamburger {
+    display: none !important;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
+/* Ensure proper box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure proper viewport settings */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Fix for flexbox layouts */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} 
