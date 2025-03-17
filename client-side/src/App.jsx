@@ -1,4 +1,3 @@
-
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 
@@ -13,6 +12,8 @@ import IntegrationsSection from './components/IntegrationsSection/IntegrationsSe
 import Pricing from './components/Pricing/Pricing'
 import HowItWorks from './components/How_It_Work/HIW'
 import FAQ from './components/FAQ/FAQ'
+import './responsive.css'
+
 function App() {
 
   return (
