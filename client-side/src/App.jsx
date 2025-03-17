@@ -23,9 +23,9 @@ function App() {
     <HowItWorks/>
     <IntegrationsSection/>
     <Services/>
-    <FAQ/>
-    <Team/>
+    {/* <FAQ/> */}
     <Pricing/>
+    <Team/>
     <Testimonial/>
     <Footer/>
     </>

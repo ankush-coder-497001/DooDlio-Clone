@@ -78,6 +78,7 @@
   line-height: 1.5;
   color: #333;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 .learn-more-btn {
@@ -107,4 +108,3 @@
     max-width: 350px;
   }
 }
-

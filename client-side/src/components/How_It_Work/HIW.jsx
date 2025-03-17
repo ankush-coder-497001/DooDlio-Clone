@@ -62,51 +62,49 @@ const HowItWorks = () => {
     <main ref={container}>
       <div id='how-it-works' className="how-it-works-container">
         <div className="how-it-works-content">
-          <h1 className="main-heading">How it Works</h1>
+          <h1 className="main-heading">What we do?</h1>
           <p className="subtitle">
-            Learn how to use our template efficiently and get
-            <br />
-            your website launched in no time.
+          Learn how to create high-performing social content efficiently <br /> and boost your brand’s online presence in no time.
           </p>
 
           <div className="cards-container">
             <div className="card">
-              <div className="stage-label">STAGE 1</div>
+              {/* <div className="stage-label">STAGE 1</div> */}
               <div className="illustration">
                 <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d193262b0b25a14d66b5a0_problem.svg" alt="Discover a Problem" />
               </div>
-              <h2 className="card-heading">Discover a Problem</h2>
+              <h2 className="card-heading">Account analysis & management</h2>
               <p className="card-text">
                 Standing out from the competition is crucial for any Startups success. Pinpointing core issues in your
                 business marketing and sales processes is vital for businesses.
               </p>
-              <button className="learn-more-btn">Learn More</button>
+              {/* <button className="learn-more-btn">Learn More</button> */}
             </div>
 
             <div className="card">
-              <div className="stage-label">STAGE 2</div>
+              {/* <div className="stage-label">STAGE 2</div> */}
               <div className="illustration">
                 <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d18ee65730673e34f17109_payment.svg" alt="Purchase Template" />
               </div>
-              <h2 className="card-heading">Purchase Template</h2>
+              <h2 className="card-heading">Content
+              strategy</h2>
               <p className="card-text">
-                Doodlio Webflow template is made in playful and friendly style, and optimised for responsive devices. It's
-                flexible to use and includes a style guide that creates consistency.
+              Xudo social creative and production approach is designed with a dynamic and engaging style, optimized for all platforms. It’s flexible, easy to use, and includes a strategy guide to ensure brand consistency.
               </p>
-              <button className="learn-more-btn">Learn More</button>
+              {/* <button className="learn-more-btn">Learn More</button> */}
             </div>
 
             <div className="card">
-              <div className="stage-label">STAGE 3</div>
+              {/* <div className="stage-label">STAGE 3</div> */}
               <div className="illustration">
                 <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d18f87f3e440d19c822453_enjoy-results.svg" alt="Enjoy Results" />
               </div>
-              <h2 className="card-heading">Enjoy Results</h2>
+              <h2 className="card-heading">Monetization
+              setup</h2>
               <p className="card-text">
-                With our Startup Landing Page Template you will be able to see your sales sky rocket. Get noticed with
-                your audience and create an everlasting brand image.
+              With our social creative and production solutions, you can maximize engagement, grow your audience, and build a strong brand presence that drives revenue.
               </p>
-              <button className="learn-more-btn">Learn More</button>
+              {/* <button className="learn-more-btn">Learn More</button> */}
             </div>
           </div>
         </div>

@@ -74,11 +74,11 @@ function Footer() {
         <footer className="footer">
           <div className="footer-content">
             <div className="footer-brand">
-              <p>© Doodlio</p>
+              <p>© Xudo</p>
               <p>
-                Designed and developed by <a className='footer-left' href="#">Zens Design</a> | Powered by <a className='footer-left' href="#">Webflow</a>
+                Designed and developed by <a className='footer-left' href="#">Muhammad Talha</a> | Powered by <a className='footer-left' href="#">TechXudo</a>
               </p>
-              <h1>Doodlio</h1>
+              <h1>Xudo</h1>
             </div>
             <div className="footer-links">
               {Object.entries(footerLinks).map(([category, links]) => (

@@ -72,7 +72,8 @@ const FeaturesSection = () => {
           <div className="features-header-wrap">
             <div className="text-box l">
               <h2 className="heading h2 features-heading">
-                Including SVG Illustrations & Icons
+              SOCIAL CREATIVE
+              & PRODUCTION
               </h2>
               <img
                 src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66cca8db8a533870de77b48b_underlines.svg"
@@ -83,8 +84,7 @@ const FeaturesSection = () => {
             </div>
             <div className="text-box s">
               <p className="paragraph large features-paragraph">
-                Our unique illustrations & icons will allow you to explain
-                concepts relevant to the Tech industry in an engaging and fun way.
+              "We create scroll-stopping, social-first content that captivates audiences, drives engagement, and builds strong brand connections."
               </p>
             </div>
           </div>
@@ -96,20 +96,20 @@ const FeaturesSection = () => {
           <div className="features-grid">
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d868aa8ff33370b43d811b_support.svg"
-              title="Support"
-              description="Reach out and we will answer any questions on how to use the template."
+              title="Social-first content creation"
+              description="Reach out, and we’ll guide you through our creative and production process."
               middle="false"
             />
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d865e56357d6565e7bc63f_responsive.svg"
-              title="Responsive"
-              description="Use this template on any screen size as it's flexible and optimized."
+              title="High-performing social formats"
+              description="Designed for any platform, our social creatives are flexible and optimized for maximum impact."
               middle="true"
             />
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d861e996beff6a63c30e97_pricing-label.png"
-              title="Affordable Pricing"
-              description="Doodlio template comes with an affordable pricing that fits anyone."
+              title="Creative social media campaigns"
+              description="We provides an affordable, high-quality solution that fits any budget and helps brands maximize their impact."
               middle="bottom"
             />
           </div>

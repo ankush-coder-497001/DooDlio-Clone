@@ -70,15 +70,21 @@
 
 .marquee {
   display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
   animation: marquee 20s linear infinite;
-
 }
-
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(-111%);
+  }
+}
 .marquee-card {
   display: flex;
   flex-direction: column;
   align-items: start;
+  flex-shrink: 0;
   width: 280px;
   background: #FCFB00;
   border-radius: 12px;
@@ -139,16 +145,7 @@ h3 {
   top: 20px;
   right: 4%;
 }
-/* Marquee Animation */
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
 
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 /* Responsive Design */
 /* @media (max-width: 900px) {

@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  background-color: #FCFB00;
+  background-color: #FEFF33;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.1;
-  color: #222;
+  color: #000;
   margin-bottom: 1.5rem;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .logo {
-  height: 15px;
+  height: 20px;
   width: auto;
 }
 

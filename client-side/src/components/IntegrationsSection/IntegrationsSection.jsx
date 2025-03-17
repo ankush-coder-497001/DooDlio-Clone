@@ -30,6 +30,27 @@ const integrations = [
     description: "Vacenture is an Irish-American professional specializing in IT services and consulting.",
     img: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d2dd09f58793c9a96a4fb8_integration-4.svg",
   },
+  {
+    name: "Cateract",
+    description: "Design together, in real-time with version control for Sketch. Collaborate in the same file.",
+    img: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d2dd08f58793c9a96a4f83_integration-1.svg",
+  },
+  {
+    name: "Apode",
+    description: "Apode is a code hosting platform for version control and collaboration and teamwork.",
+    img: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d2dd08f58793c9a96a4f97_integration-2.svg",
+  },
+  {
+    name: "Naxer",
+    description: "Naxer is a multinational hardware and electronics corporation specializing in electronics.",
+    img: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d2dd08f58793c9a96a4f9e_integration-3.svg",
+  },
+  {
+    name: "Vacenture",
+    description: "Vacenture is an Irish-American professional specializing in IT services and consulting.",
+    img: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d2dd09f58793c9a96a4fb8_integration-4.svg",
+  },
+  
 ];
 
 const IntegrationsSection = () => {
@@ -75,14 +96,14 @@ const IntegrationsSection = () => {
                 <img src={Oval} alt="Oval" className="oval" />
               </div>
               <p className="paragraph1">
-                The integrations section showcases how our product seamlessly connects with other tools.
+              "The integrations section highlights how our social creative and production seamlessly connect with various platforms and tools."
               </p>
             </div>
 
             <div className="marquee-wrapper">
               <div className="marquee">
                 {integrations.map((item, index) => (
-                  <div key={index} className="marquee-card">
+                  <div key={index} className="marquee-card" style={{"--i": index}}>
                     <div className="card-header">
                       <img src={item.img} alt={item.name} className="integration-logo" />
                       <h3>{item.name}</h3>

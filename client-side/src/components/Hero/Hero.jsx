@@ -48,17 +48,18 @@ export default function Hero() {
         <div className={styles.container}>
           <div className={styles.content}>
             <img src={blob} alt="blob" className={styles.blob} />
-            <h1 id='hero_heading' className={styles.heading}>Connect with your customers</h1>
+            <h1 id='hero_heading' className={styles.heading}>Helping creators to grow</h1>
             <p id='hero_paragraph' className={styles.subheading}>
-              Use our template to quickly and efficiently brand your growing business.
+              We're an award-winning social media and influencer agency.
+              We specialise in inserting brands into culture via high-impact always-on campaigns.
             </p>
-            <div id='btn_group' className={styles.buttons}>
+            {/* <div id='btn_group' className={styles.buttons}>
               <button className={styles.previewButton}>Preview Template</button>
               <button className={styles.learnButton}>Learn More</button>
-            </div>
+            </div> */}
 
             <div id='hero_slider' className={styles.usedBySection}>
-              <p className={styles.usedByText}>Our template used by</p>
+              <p className={styles.usedByText}>Our Collaborated Brands</p>
               <div className={styles.logoContainer}>
                 <div className={styles.logoScroll}>
                   <div className={styles.logos}>

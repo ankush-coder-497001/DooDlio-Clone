@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../../App.css";
-
+import logo from "./images/logo.svg"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,34 +33,35 @@ const Navbar = () => {
             <div className="navigation-middle">
               <a href="/" className="logo-link">
                 <img
-                  src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66b74696ae40a0a4ef3eabf2_Logo.svg"
+                  src={logo}
                   alt="Logo"
-                  className="doodlio-logo"
+                  className="xudo-logo"
                 />
+                <h2>Xudo</h2>
               </a>
             </div>
 
             <div className="navigation-right">
               <nav className="navigation-menu">
-              <a href="#faq" className="navigation-link">
-                <span className="link-text link-text1">FAQ</span>
-                <span className="link-text link-text2">FAQ</span>
-              </a>
-              <a href="#team" className="navigation-link">
-                <span className="link-text link-text1">Team</span>
-                <span className="link-text link-text2">Team</span>
-              </a>
-              <a href="#pricing" className="navigation-link">
-                <span className="link-text link-text1">Pricing</span>
-                <span className="link-text link-text2">Pricing</span>
-              </a>
+                {/* <a href="#faq" className="navigation-link">
+                  <span className="link-text link-text1">FAQ</span>
+                  <span className="link-text link-text2">FAQ</span>
+                </a> */}
+                <a href="#team" className="navigation-link">
+                  <span className="link-text link-text1">Team</span>
+                  <span className="link-text link-text2">Team</span>
+                </a>
+                <a href="#pricing" className="navigation-link">
+                  <span className="link-text link-text1">Pricing</span>
+                  <span className="link-text link-text2">Pricing</span>
+                </a>
               </nav>
-              <a
+              {/* <a
                 href="https://webflow.com/dashboard/marketplace-checkout?workspace=toms-design&p=6709fb0da04d688b7962788e"
                 className="small-button light"
               >
-                Buy Template
-              </a>
+                Login
+              </a> */}
             </div>
           </div>
         </nav>
@@ -70,14 +71,14 @@ const Navbar = () => {
           <a href="#features" className="mobile-link">Features</a>
           <a href="#how-it-works" className="mobile-link">How it Works</a>
           <a href="#integrations" className="mobile-link">Integrations</a>
-          <a href="#faq" className="mobile-link">FAQ</a>
+          {/* <a href="#faq" className="mobile-link">FAQ</a> */}
           <a href="#team" className="mobile-link">Team</a>
           <a href="#pricing" className="mobile-link">Pricing</a>
           <a
             href="https://webflow.com/dashboard/marketplace-checkout?workspace=toms-design&p=6709fb0da04d688b7962788e"
             className="mobile-button"
           >
-            Buy Template
+            Login
           </a>
         </div>
       </div>
