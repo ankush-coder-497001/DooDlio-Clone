@@ -43,6 +43,8 @@
   line-height: 1;
   position: relative;
   z-index: 1;
+  font-weight: 800;
+  letter-spacing: -2px;
 }
 
 .footer-links {
@@ -62,6 +64,7 @@
 
 #fs {
   transition: all 0.5s;
+  font-weight: 500;
 }
 
 .footer-link:hover #fs {
@@ -74,22 +77,29 @@
 
 .footer-column h3 {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .footer-column ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .footer-column li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 
 .footer-column a {
   color: #222;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
 /* CTA Section */
@@ -173,12 +183,8 @@
     font-size: 7rem;
   }
   
-  .cta-section {
-    width: 85vw;
-    margin-left: 7.5%;
-  }
   .footer-link {
-    height: 40px !important;
+    height: 32px !important;
   }
 }
 
@@ -191,9 +197,7 @@
   .footer-links {
     gap: 2rem;
   }
-  .footer-link:hover #fs {
-    transform: translateY(0%);
-  }
+  
   .cta-section {
     padding: 3rem 2rem;
   }
@@ -208,7 +212,7 @@
     right: -100px;
   }
   .footer-link {
-    height: 40px !important;
+    height: 32px !important;
   }
 }
 
@@ -219,59 +223,44 @@
   
   .footer-content {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    gap: 3rem;
   }
   
   .footer-brand {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
   
   .footer-brand h1 {
     font-size: 5rem;
     margin-top: 2rem;
+    line-height: 1.1;
   }
   
   .footer-links {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    width: 100%;
+    margin-top: 0;
   }
   
   .footer-column {
-    min-width: 120px;
-    text-align: center;
+    width: 100%;
   }
   
   .footer-link {
-    justify-content: center;
-  }
-  
-  .cta-section {
-    width: 90vw;
-    margin-left: 5%;
-    padding: 2.5rem 1.5rem;
-    border-radius: 30px;
-  }
-  
-  .cta-content h2 {
-    font-size: 2rem;
-  }
-  
-  .membershape {
-    height: 400px;
-    top: -150px;
-    right: -80px;
-  }
-  .footer-link {
-    height: 40px !important;
+    height: 32px !important;
   }
 }
 
 @media (max-width: 576px) {
-  .footer-link {
-    height: 40px !important;
-  }
   .footer {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1.25rem;
+  }
+  
+  .footer-content {
+    gap: 2.5rem;
   }
   
   .footer-brand h1 {
@@ -279,54 +268,39 @@
     margin-top: 1.5rem;
   }
   
+  .footer-brand p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
   .footer-links {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
   
   .footer-column {
     width: 100%;
-    max-width: 250px;
   }
   
-  .cta-section {
-    width: 95vw;
-    margin-left: 2.5%;
-    padding: 2rem 1rem;
-    border-radius: 20px;
+  .footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
   }
   
-  .cta-content h2 {
-    font-size: 1.8rem;
-  }
-  
-  .cta-content p {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
+  .footer-column ul {
     gap: 0.75rem;
   }
   
-  .btn-primary, .btn-secondary {
-    width: 100%;
-    padding: 0.75rem 1rem;
-  }
-  
-  .membershape {
-    height: 300px;
-    top: -100px;
-    right: -60px;
+  .footer-link {
+    height: 32px !important;
   }
 }
 
 @media (max-width: 375px) {
-  .footer-link {
-    height: 40px !important;
+  .footer {
+    padding: 2rem 1rem;
   }
+  
   .footer-brand h1 {
     font-size: 2.8rem;
     margin-top: 1rem;
@@ -334,27 +308,24 @@
   }
   
   .footer-brand p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
   
   .footer-column h3 {
     font-size: 1rem;
   }
   
-  .cta-content h2 {
-    font-size: 1.6rem;
+  .footer-column ul {
+    gap: 0.5rem;
   }
   
-  .cta-content p {
-    font-size: 0.85rem;
+  .footer-link {
+    height: 28px !important;
   }
 }
 
 /* Landscape mode fixes */
 @media (max-height: 500px) and (orientation: landscape) {
-  .footer-link {
-    height: 40px !important;
-  }
   .footer {
     padding: 2rem 1rem;
   }
@@ -362,6 +333,7 @@
   .footer-content {
     flex-direction: row;
     text-align: left;
+    gap: 2rem;
   }
   
   .footer-brand h1 {
@@ -370,20 +342,20 @@
   }
   
   .footer-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   
   .footer-column {
-    text-align: left;
+    width: 100%;
+  }
+  
+  .footer-column ul {
+    gap: 0.5rem;
   }
   
   .footer-link {
-    justify-content: flex-start;
-  }
-  
-  .cta-section {
-    padding: 1.5rem 1rem;
+    height: 28px !important;
   }
 } 
