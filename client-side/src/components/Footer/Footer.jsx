@@ -10,13 +10,13 @@ gsap.registerPlugin(useGSAP); // register the hook to avoid React version discre
 gsap.registerPlugin(ScrollTrigger);
 
 const footerLinks = {
-  Pages: [{ first: "Home", sec: "Home" }],
-  Admin: [{first:"Style Guide",sec:"Style Guide"}, {first:"Licensing",sec:"Licensing"}, {first:"Change Log",sec:"Change Log"}, {first:"Password",sec:"Password"}, {first:"404",sec:"404"}],
-  Social: [{first:"Instagram",sec:"Instagram"}, {first:"Facebook",sec:"Facebook"}, {first:"Youtube",sec:"Youtube"}, {first:"Linkedin",sec:"Linkedin"}, {first:"X",sec:"X"}],
-  Contact: [{first:"Email Me",sec:"Email Me"}, {first:"+67 24 24 12 45",sec:"+67 24 24 12 45"}],
+  Pages: ["Home"],
+  Admin: ["Style Guide", "Licensing", "Change Log", "Password", "404"],
+  Social: ["Instagram", "Facebook", "Youtube", "Linkedin", "X"],
+  Contact: ["Email Me", "+67 24 24 12 45"]
 }
-function Footer() {
 
+function Footer() {
   const container = useRef();
 
   useGSAP(() => {
@@ -31,7 +31,6 @@ function Footer() {
         }
       }
     );
-
 
     tl.from('.cta-content h2', {
       opacity: 0,
@@ -57,7 +56,6 @@ function Footer() {
 
   return (
     <>
-
       <main ref={container}>
         <section className="cta-section">
           <div className="cta-content">
@@ -88,8 +86,7 @@ function Footer() {
                     {links.map((link, index) => (
                       <li key={index}>
                         <div className='footer-link'>
-                          <a id='fs' href="#">{link.first}</a>
-                          <a id='fs' href="#">{link.sec}</a>
+                          <a id='fs' href="#">{link}</a>
                         </div>
                       </li>
                     ))}
@@ -100,8 +97,6 @@ function Footer() {
           </div>
         </footer>
       </main>
-
-
     </>
   )
 }
