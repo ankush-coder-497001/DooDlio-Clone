@@ -191,7 +191,9 @@
   .footer-links {
     gap: 2rem;
   }
-  
+  .footer-link:hover #fs {
+    transform: translateY(0%);
+  }
   .cta-section {
     padding: 3rem 2rem;
   }
@@ -328,6 +330,7 @@
   .footer-brand h1 {
     font-size: 2.8rem;
     margin-top: 1rem;
+    
   }
   
   .footer-brand p {

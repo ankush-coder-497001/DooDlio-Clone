@@ -73,10 +73,9 @@ const HowItWorks = () => {
               <div className="illustration">
                 <img src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d193262b0b25a14d66b5a0_problem.svg" alt="Discover a Problem" />
               </div>
-              <h2 className="card-heading">Account analysis & management</h2>
+              <h2 className="card-heading">Financial Management</h2>
               <p className="card-text">
-                Standing out from the competition is crucial for any Startups success. Pinpointing core issues in your
-                business marketing and sales processes is vital for businesses.
+              Accurate financial management is crucial for any business's success. Pinpointing core issues in your financial accounts and management processes is vital for making informed decisions, optimizing resources, and driving growth.
               </p>
               {/* <button className="learn-more-btn">Learn More</button> */}
             </div>
@@ -89,7 +88,7 @@ const HowItWorks = () => {
               <h2 className="card-heading">Content
               strategy</h2>
               <p className="card-text">
-              Xudo social creative and production approach is designed with a dynamic and engaging style, optimized for all platforms. It’s flexible, easy to use, and includes a strategy guide to ensure brand consistency.
+              Our content strategy approach is designed to deliver dynamic and engaging content experiences, optimized for all channels and audiences. It's flexible, easy to execute, and includes a comprehensive guide to ensure consistent messaging and brand storytelling across all platforms.
               </p>
               {/* <button className="learn-more-btn">Learn More</button> */}
             </div>
@@ -102,7 +101,7 @@ const HowItWorks = () => {
               <h2 className="card-heading">Monetization
               setup</h2>
               <p className="card-text">
-              With our social creative and production solutions, you can maximize engagement, grow your audience, and build a strong brand presence that drives revenue.
+              With our monetization setup solutions, you can optimize revenue streams. Maximize earnings and build a profitable business model. Drive growth and success with our expert solutions. Achieve long-term financial stability and prosperity.
               </p>
               {/* <button className="learn-more-btn">Learn More</button> */}
             </div>

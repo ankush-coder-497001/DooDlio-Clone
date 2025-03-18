@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Footer.css"
 import { useRef } from 'react';
 import gsap from 'gsap';
@@ -18,7 +18,7 @@ const footerLinks = {
 function Footer() {
 
   const container = useRef();
-
+  const [display,setDisplay] = useState(window.innerWidth);
   useGSAP(() => {
     var tl = gsap.timeline(
       {
@@ -55,6 +55,16 @@ function Footer() {
 
   }, { scope: container });
 
+
+  // useEffect(() => {
+    
+  // })
+  // if(window.innerWidth <= 768+"px")
+  //   {
+  //     // setDisplay(false);
+  //     console.log("less than 768px");
+  //   }
+  console.log(display)
   return (
     <>
 
@@ -89,7 +99,7 @@ function Footer() {
                       <li key={index}>
                         <div className='footer-link'>
                           <a id='fs' href="#">{link.first}</a>
-                          <a id='fs' href="#">{link.sec}</a>
+                          {display < 900 ? "" : <a id='fs' href="#">{link.sec}</a>}
                         </div>
                       </li>
                     ))}
