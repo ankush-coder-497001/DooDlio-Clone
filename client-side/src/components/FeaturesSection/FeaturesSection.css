@@ -79,11 +79,16 @@
 }
 
 .card-heading {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   margin-bottom: 10px;
-  color: #333;
 }
-
+#card-head
+{
+  font-size: 1.8rem;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
 .features-paragraph {
   font-size: 1.1rem;
   color: #555;

@@ -96,19 +96,19 @@ const FeaturesSection = () => {
           <div className="features-grid">
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d868aa8ff33370b43d811b_support.svg"
-              title="Social-first content creation"
+              title="Social Content"
               description="Reach out, and we’ll guide you through our creative and production process."
               middle="false"
             />
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d865e56357d6565e7bc63f_responsive.svg"
-              title="High-performing social formats"
+              title="Viral Formats"
               description="Designed for any platform, our social creatives are flexible and optimized for maximum impact."
               middle="true"
             />
             <FeatureCard
               icon="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d861e996beff6a63c30e97_pricing-label.png"
-              title="Creative social media campaigns"
+              title="Social Campaigns"
               description="We provides an affordable, high-quality solution that fits any budget and helps brands maximize their impact."
               middle="bottom"
             />
@@ -123,7 +123,7 @@ const FeatureCard = ({ icon, title, description, middle }) => {
   return (
     <div className="feature-card">
       <img src={icon} alt={title} className="feature-card-icon" />
-      <h3 className="heading h6 card-heading">{title}</h3>
+      <h3 id="card-head" className="card-heading">{title}</h3>
       <p className="paragraph large features-paragraph card-paragraph">{description}</p>
       <img
         src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66c7140403f4ce1c8aa304ad_flower.svg"
