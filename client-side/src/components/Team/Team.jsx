@@ -30,24 +30,24 @@ export default function Team() {
       image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d83f24363f60566637e9f8_avatar-3.avif  ",
       background: "yellow",
     },
-    {
-      name: "Francis Doe",
-      role: "Office Accountant",
-      image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d8408cc58c2f75bca7f95f_avatar-4.avif",
-      background: "dark",
-    },
-    {
-      name: "Lisa Curtis",
-      role: "Finance Analyst",
-      image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d8417ea2ae187da8a0d159_avatar-5.avif",
-      background: "yellow",
-    },
-    {
-      name: "Jacob Frisk",
-      role: "Junior Developer",
-      image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d841821e1ef6038cd1e916_avatar-6.avif",
-      background: "dark",
-    },
+    // {
+    //   name: "Francis Doe",
+    //   role: "Office Accountant",
+    //   image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d8408cc58c2f75bca7f95f_avatar-4.avif",
+    //   background: "dark",
+    // },
+    // {
+    //   name: "Lisa Curtis",
+    //   role: "Finance Analyst",
+    //   image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d8417ea2ae187da8a0d159_avatar-5.avif",
+    //   background: "yellow",
+    // },
+    // {
+    //   name: "Jacob Frisk",
+    //   role: "Junior Developer",
+    //   image: "https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66d841821e1ef6038cd1e916_avatar-6.avif",
+    //   background: "dark",
+    // },
   ]
 
 

@@ -420,7 +420,7 @@ pre.w-code-block code {
   display: inline-block !important
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -428,7 +428,7 @@ h5,
 h6 {
   margin-bottom: 10px;
   font-weight: 700
-}
+} */
 
 h1 {
   margin-top: 20px;
@@ -2273,7 +2273,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-family: Bricolage Grotesque, sans-serif;
   font-size: 32px;
@@ -3540,6 +3540,9 @@ p {
 
 .xudo-logo {
   width: 60px
+}
+.xudo-logo h2{
+  margin-top: 10px !important;
 }
 
 .navigation-wrapper {
