@@ -10,10 +10,25 @@ gsap.registerPlugin(useGSAP); // register the hook to avoid React version discre
 gsap.registerPlugin(ScrollTrigger);
 
 const footerLinks = {
-  Pages: ["Home"],
-  Admin: ["Style Guide", "Licensing", "Change Log", "Password", "404"],
-  Social: ["Instagram", "Facebook", "Youtube", "Linkedin", "X"],
-  Contact: ["Email Me", "+67 24 24 12 45"]
+  Pages: [{fr:"Home",sec:"Home"}],
+  Admin: [
+    { "fr": "Style Guide", "sec": "Style Guide" },
+    { "fr": "Licensing", "sec": "Licensing" },
+    { "fr": "Change Log", "sec": "Change Log" },
+    { "fr": "Password", "sec": "Password" },
+    { "fr": "404", "sec": "404" }
+  ],
+  Social:[
+    { "fr": "Instagram", "sec": "Instagram" },
+    { "fr": "Facebook", "sec": "Facebook" },
+    { "fr": "Youtube", "sec": "Youtube" },
+    { "fr": "Linkedin", "sec": "Linkedin" },
+    { "fr": "X", "sec": "X" }
+  ],
+  Contact: [
+    { "fr": "Email Me", "sec": "Email Me" },
+    { "fr": "+67 24 24 12 45", "sec": "+67 24 24 12 45" }
+  ]
 }
 
 function Footer() {
@@ -54,16 +69,6 @@ function Footer() {
 
   }, { scope: container });
 
-
-  // useEffect(() => {
-    
-  // })
-  // if(window.innerWidth <= 768+"px")
-  //   {
-  //     // setDisplay(false);
-  //     console.log("less than 768px");
-  //   }
-  console.log(display)
   return (
     <>
       <main ref={container}>
@@ -96,8 +101,8 @@ function Footer() {
                     {links.map((link, index) => (
                       <li key={index}>
                         <div className='footer-link'>
-                          <a id='fs' href="#">{link.first}</a>
-                          <a id='fs' href="#">{link.sec}</a>
+                          <a id='fs' href="#">{link.fr}</a>
+                          {display < 900 ? "" : <a id='fs' href="#">{link.sec}</a>}
                         </div>
                       </li>
                     ))}

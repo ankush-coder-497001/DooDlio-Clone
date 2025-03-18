@@ -197,7 +197,9 @@
   .footer-links {
     gap: 2rem;
   }
-  
+  .footer-link:hover #fs {
+    transform: translateY(0%);
+  }
   .cta-section {
     padding: 3rem 2rem;
   }
