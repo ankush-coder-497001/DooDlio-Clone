@@ -11,8 +11,8 @@ import Footer from './components/Footer/Footer'
 import IntegrationsSection from './components/IntegrationsSection/IntegrationsSection'
 import Pricing from './components/Pricing/Pricing'
 import HowItWorks from './components/How_It_Work/HIW'
-import FAQ from './components/FAQ/FAQ'
 import './responsive.css'
+import CaseStudies from './components/CaseStudies/CaseStudies'
 
 function App() {
 
@@ -24,7 +24,7 @@ function App() {
     <HowItWorks/>
     <IntegrationsSection/>
     <Services/>
-    {/* <FAQ/> */}
+    <CaseStudies/>
     <Pricing/>
     <Team/>
     <Testimonial/>
