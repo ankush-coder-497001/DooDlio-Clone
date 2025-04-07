@@ -11,6 +11,10 @@ html {
 }
 
 body {
+  color: #333;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -2179,11 +2183,11 @@ textarea.w-select {
 }
 
 :root {
-  --accent: #fcfb00;
-  --light-grey: #dee0e3;
-  --black: #1f2428;
-  --dark-grey: #9396a4;
-  --white: white
+  --accent: #2F4156;
+  --light-grey: #F5EFEB;
+  --black: #2F4156;
+  --dark-grey: #567C8D;
+  --white: #F5EFEB
 }
 
 .w-layout-grid {
@@ -2266,7 +2270,7 @@ body {
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Bricolage Grotesque, sans-serif;
+  font-family: 'Bricolage Grotesque', 'Inter', Arial, sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 44px
@@ -2275,7 +2279,7 @@ h1 {
 h2 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Bricolage Grotesque, sans-serif;
+  font-family: 'Bricolage Grotesque', 'Inter', Arial, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 36px
@@ -2319,7 +2323,8 @@ h6 {
 
 p {
   margin-bottom: 10px;
-  line-height: 130%
+  line-height: 1.5;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 .sg-body {
@@ -3309,6 +3314,7 @@ p {
   padding-bottom: 0;
   display: flex;
   align-items: center;
+
 }
 
 .container.features-container {
@@ -3410,7 +3416,7 @@ p {
 }
 
 .navigation-link {
-  color: #0f0f0f;
+  color: #F5EFEB;
   margin-top: 0;
   margin-bottom: .5rem;
   padding-top: 0;
@@ -3425,7 +3431,7 @@ p {
 
 .link-text {
   z-index: 99;
-  color: #000;
+  color: #F5EFEB;
   justify-content: center;
   align-items: center;
   line-height: 130%;
@@ -3506,10 +3512,10 @@ p {
 
 .header {
   z-index: 100000;
-  background-color: #ffff;
+  background-color: #567C8D;
   position: sticky;
   inset: 0% 0% auto;
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid #2F4156;
 }
 
 .navigation {
@@ -3535,7 +3541,7 @@ p {
 }
 
 .logo-link h2 {
-  color: black;
+  color: #F5EFEB;
 }
 
 .xudo-logo {
@@ -3585,13 +3591,13 @@ p {
 }
 
 .bar-1 {
-  background-color: var(--black);
+  background-color: #2F4156;
   width: 30px;
   height: 4px
 }
 
 .bar-2 {
-  background-color: var(--black);
+  background-color: #2F4156;
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -3602,19 +3608,19 @@ p {
 }
 
 .bar-1-middle {
-  background-color: #858eca;
+  background-color: #567C8D;
   width: 4px;
   height: 0
 }
 
 .bar-3 {
-  background-color: var(--black);
+  background-color: #2F4156;
   width: 30px;
   height: 4px
 }
 
 .mobile-menu-navigation {
-  color: var(--white);
+  color: #F5EFEB;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -3624,7 +3630,7 @@ p {
 }
 
 .mobile-menu-link {
-  color: var(--white)
+  color: #F5EFEB;
 }
 
 .body {
@@ -3639,27 +3645,28 @@ p {
 
 .section {
   padding-top: 4rem;
-  padding-bottom: 4rem
+  padding-bottom: 4rem;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 .hero-section {
-  background-color: var(--accent);
+  background-color: #567C8D;
   padding-bottom: 0;
   position: relative;
   height: calc(100vh - 85px);
 }
 
 .section.features-section {
-  background-color: var(--black);
+  background-color: #2F4156;
   padding-top: 4rem
 }
 
 .section.how-it-works-section {
-  background-color: var(--accent)
+  background-color: #F5EFEB;
 }
 
 .section.integrations-section {
-  background-color: #1f242800;
+  background-color: #567C8D;
   border-radius: 0;
   flex-flow: column;
   justify-content: center;
@@ -3671,22 +3678,23 @@ p {
 }
 
 .section.services-section {
-  background-color: var(--white);
+  background-color: #F5EFEB;
   padding-top: 0;
   position: relative
 }
 
 .section.why-us-section {
-  background-color: var(--accent);
+  background-color: #2F4156;
   padding-bottom: 0
 }
 
 .section.team-section {
-  position: relative
+  position: relative;
+  background-color: #F5EFEB;
 }
 
 .section.pricing-section {
-  background-color: var(--black)
+  background-color: #2F4156;
 }
 
 .box-wrapper {
@@ -6324,6 +6332,7 @@ p {
   right: 20px;
   top: 15px;
   z-index: 1001;
+  color: #F5EFEB;
 }
 
 .mobile-menu {
@@ -6333,7 +6342,7 @@ p {
   top: 60px;
   right: 0;
   width: 100%;
-  background: white;
+  background: #2F4156;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
@@ -6349,20 +6358,20 @@ p {
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: #F5EFEB;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .mobile-link:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #567C8D;
 }
 
 .mobile-button {
   margin-top: 10px;
   display: block;
-  background: #007bff;
-  color: white;
+  background: #567C8D;
+  color: #F5EFEB;
   padding: 12px;
   border-radius: 5px;
   text-decoration: none;

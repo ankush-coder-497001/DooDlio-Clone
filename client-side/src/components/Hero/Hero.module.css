@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  background-color: #FEFF33;
+  background-color: #567C8D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,9 @@
   width: 220px;
   height: 200px;
   z-index: -1;
+  background-color: #2F4156;
+  opacity: 0.6;
+  border-radius: 50%;
 }
 .container {
   width: 100%;
@@ -39,15 +42,17 @@
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.1;
-  color: #000;
+  color: #F5EFEB;
   margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .subheading {
   font-size: 1.25rem;
   line-height: 1.5;
-  color: #333;
+  color: #F5EFEB;
   margin-bottom: 2rem;
+  opacity: 0.9;
 }
 
 .buttons {
@@ -57,35 +62,38 @@
 }
 
 .previewButton {
-  background-color: #222;
-  color: white;
+  background-color: #2F4156;
+  color: #F5EFEB;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .previewButton:hover {
-  background-color: #000;
+  background-color: #F5EFEB;
+  color: #2F4156;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .learnButton {
   background-color: transparent;
-  color: #222;
-  border: 1px solid #222;
+  color: #F5EFEB;
+  border: 1px solid #F5EFEB;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .learnButton:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(245, 239, 235, 0.1);
 }
 
 .usedBySection {
@@ -95,7 +103,7 @@
 .usedByText {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #333;
+  color: #F5EFEB;
   margin-bottom: 1rem;
 }
 
@@ -142,6 +150,7 @@
   max-width: 100%;
   height: auto;
   width: 500px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
 }
 
 /* Responsive styles */

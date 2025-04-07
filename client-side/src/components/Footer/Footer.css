@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-  background-color: #FCFB00;
+  background-color: #2F4156;
   padding: 4rem 2rem;
   min-height: auto;
   width: 100%;
@@ -18,18 +18,19 @@
 
 .footer-left {
   text-decoration: underline;
-  color: black;
+  color: #F5EFEB;
   transition: color 0.3s ease;
 }
 
 .footer-left:hover {
-  color: #555;
+  color: #567C8D;
 }
 
 .footer-brand {
   flex: 1;
   min-width: 250px;
   position: relative;
+  color: white;
 }
 
 .footer-brand p {
@@ -45,6 +46,7 @@
   z-index: 1;
   font-weight: 800;
   letter-spacing: -2px;
+  color: #F5EFEB;
 }
 
 .footer-links {
@@ -97,15 +99,15 @@
 }
 
 .footer-column a {
-  color: #222;
+  color: #F5EFEB;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
 /* CTA Section */
 .cta-section {
-  background-color: #1F2428;
-  color: white;
+  background-color: #567C8D;
+  color: #F5EFEB;
   padding: 4rem 2rem;
   text-align: center;
   border-radius: 40px;
@@ -148,8 +150,8 @@
 }
 
 .btn-primary {
-  background-color: #FCFB00;
-  color: #222;
+  background-color: #F5EFEB;
+  color: #2F4156;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
@@ -159,14 +161,14 @@
 }
 
 .btn-primary:hover {
-  background-color: #e6e500;
+  background-color: #e6e6e6;
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: white;
+  color: #F5EFEB;
   padding: 0.75rem 1.5rem;
-  border: 1px solid white;
+  border: 1px solid #F5EFEB;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;

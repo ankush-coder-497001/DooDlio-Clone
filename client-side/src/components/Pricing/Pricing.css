@@ -2,7 +2,7 @@
 
 .pricing-section {
   padding: 80px 20px;
-  background-color: #f9f9f9;
+  background-color: #2F4156;
   text-align: center;
 }
 
@@ -27,14 +27,14 @@
 
 .pricing-heading {
   font-weight: 700;
-  color: #ffff;
+  color: #F5EFEB;
   font-size: 4rem;
 }
 
 .text .price_paragraph {
   font-size: 1.3rem;
   width: 38.4vw;
-  color: #ffff;
+  color: #F5EFEB;
   margin-bottom: 40px;
 }
 
@@ -66,8 +66,8 @@
   width: 100px;
   height: 30px;
   margin-bottom: 10px;
-  color: #333;
-  background: #FCFB00;
+  color: #2F4156;
+  background: #F5EFEB;
   border-radius: 10px;
   font-size: 0.9rem;
 }
@@ -102,12 +102,12 @@
 }
 
 .price_popular {
-  color: #FCFB00;
+  color: #F5EFEB;
 }
 
 .paragraph {
   font-size: 1rem;
-  color: #1F2428;
+  color: #2F4156;
   width: 100%;
   margin-top: 20px;
 }
@@ -116,7 +116,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 20px;
-  color: white;
+  color: #F5EFEB;
 }
 
 .button {
@@ -130,30 +130,30 @@
 }
 
 .button.outline {
-  border: 0px solid #1F2428;
+  border: 0px solid #2F4156;
   padding: 20px 40px;
   background: transparent;
 }
 
 .button.outline:hover {
-  background: #1F2428;
-  color: #fff;
+  background: #567C8D;
+  color: #F5EFEB;
 }
 
 .button.light {
-  background: white;
-  color: #1F2428;
+  background: #F5EFEB;
+  color: #2F4156;
   padding: 20px 35px;
 }
 
 .button.light:hover {
-  background: #1F2428;
-  color: white;
+  background: #567C8D;
+  color: #F5EFEB;
 }
 
 .button.accent {
-  background: #FCFB00;
-  color: black;
+  background: #567C8D;
+  color: #F5EFEB;
 }
 
 .contact-sales-wrap {

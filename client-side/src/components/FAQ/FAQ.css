@@ -1,6 +1,6 @@
 /* Main container */
 .faq-container {
-  background-color: #FCFB00;
+  background-color: #F5EFEB;
   min-height: 100vh;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -19,11 +19,12 @@
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
+  color: #2F4156;
 }
 
 .question-mark {
   font-size: 48px;
-  color: white;
+  color: #567C8D;
   font-size: 5rem;
   position: absolute;
   top: -10px;
@@ -42,7 +43,7 @@
 
 .faq-subtitle {
   font-size: 18px;
-  color: #333;
+  color: #567C8D;
 }
 
 /* Content layout */
@@ -65,7 +66,7 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #333;
+  color: #2F4156;
   transition: all 1s;
 }
 
@@ -84,8 +85,8 @@
 }
 
 .faq-question {
-  background-color: #222;
-  color: white;
+  background-color: #2F4156;
+  color: #F5EFEB;
   padding: 16px 20px;
   display: flex;
   justify-content: space-between;
@@ -96,7 +97,7 @@
 }
 
 .faq-question:hover {
-  background-color: #333;
+  background-color: #567C8D;
 }
 
 .faq-icon {
@@ -105,9 +106,9 @@
 }
 
 .faq-answer {
-  background-color: white;
+  background-color: #F5EFEB;
   padding: 20px;
-  color: #333;
+  color: #2F4156;
   line-height: 1.6;
   transition: all 1s;
 }

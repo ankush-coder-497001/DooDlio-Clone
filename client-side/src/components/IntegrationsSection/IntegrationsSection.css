@@ -4,6 +4,7 @@
   text-align: center;
   width: 100%;
   min-height: 100vh;
+  background-color: #567C8D;
 }
 
 .container-wrap {
@@ -35,7 +36,7 @@
 .heading {
   font-size: 3.8rem;
   font-weight: 700;
-  color: white;
+  color: #F5EFEB;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -53,7 +54,7 @@
 
 .paragraph1 {
   font-size: 1.2rem;
-  color: white;
+  color: #F5EFEB;
   text-align: center;
   width: 60%;
   margin: auto;
@@ -86,7 +87,7 @@
   align-items: start;
   flex-shrink: 0;
   width: 280px;
-  background: #FCFB00;
+  background: #F5EFEB;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -106,12 +107,12 @@
 
 h3 {
   font-size: 1.5rem;
-  color: #222;
+  color: #2F4156;
 }
 
 .card-description {
   font-size: 1rem;
-  color: black;
+  color: #2F4156;
   text-wrap: wrap;
   text-align: left;
   /* margin-bottom: 10px; */
@@ -120,7 +121,7 @@ h3 {
 .integration-link {
   font-size: 1rem;
   text-decoration: none;
-  color: black;
+  color: #567C8D;
   font-weight: bold;
 }
 .bottom_text
@@ -130,7 +131,7 @@ h3 {
 }
 .bottom_text h1
 {
-  color: #FCFB00;
+  color: #F5EFEB;
   font-size: 2.6rem;
   margin-top: 20px;
   text-transform: capitalize;
