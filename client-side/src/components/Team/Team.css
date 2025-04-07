@@ -57,13 +57,13 @@
 }
 
 .team-member.yellow {
-  background-color: #2F4156;
+  background-color: #567C8D;
   color: #F5EFEB;
 }
 
 .team-member.dark {
-  background-color: #567C8D;
-  color: #F5EFEB;
+  background-color: #F5EFEB;
+  color: #567C8D;
 }
 .team-member-info
 {
@@ -73,12 +73,12 @@
   position: absolute;
   bottom: 5px;
   padding: 5px 10px;
-  background-color: #F5EFEB;
+  background-color: #567C8D;
   width: 100%;
 }
 .team-member-info h3, .team-member-info p
 {
-  color: #2F4156;
+  color: #F5EFEB;
 }
 .team-member-info h3 {
   font-size: 1.25rem;
@@ -138,8 +138,8 @@
 }
 
 .testimonial-card {
-  background-color: #567C8D;
-  color: #F5EFEB;
+  background-color: #F5EFEB;
+  color: #567C8D;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -164,7 +164,7 @@
 }
 
 .testimonial-header p {
-  color: #F5EFEB;
+  color: #567C8D;
   font-size: 0.9rem;
 }
 
@@ -185,7 +185,7 @@
 
 /* CTA Section */
 .cta-section {
-  background-color: #2F4156;
+  background-color: #567C8D;
   color: #F5EFEB;
   padding: 4rem 2rem;
   text-align: center;
@@ -230,7 +230,7 @@
 
 .btn-primary {
   background-color: #F5EFEB;
-  color: #2F4156;
+  color: #567C8D;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
@@ -241,6 +241,7 @@
 .btn-primary:hover {
   background-color: #567C8D;
   color: #F5EFEB;
+  border: 1px solid #F5EFEB;
 }
 
 .btn-secondary {

@@ -2,7 +2,7 @@
 
 .pricing-section {
   padding: 80px 20px;
-  background-color: #2F4156;
+  background-color: #567C8D;
   text-align: center;
 }
 
@@ -27,14 +27,14 @@
 
 .pricing-heading {
   font-weight: 700;
-  color: #F5EFEB;
+  color: #567C8D;
   font-size: 4rem;
 }
 
 .text .price_paragraph {
   font-size: 1.3rem;
   width: 38.4vw;
-  color: #F5EFEB;
+  color: #567C8D;
   margin-bottom: 40px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .pricing-card {
-  background: #fff;
+  background: #F5EFEB;
   border-radius: 25px;
   padding: 25px;
   text-align: center;
@@ -58,23 +58,33 @@
 
 .pricing-card.dark {
   background: transparent;
-  color: #fff;
+  color: #567C8D;
+  border: 2px solid #F5EFEB;
 }
 
 .popular-wrap {
-  font-weight: 500;
+  font-weight: 600;
   width: 100px;
   height: 30px;
   margin-bottom: 10px;
-  color: #2F4156;
+  color: #567C8D;
   background: #F5EFEB;
   border-radius: 10px;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popular-wrap.outlined {
-  background: #eee;
+  background: #F5EFEB;
+  color: #567C8D;
+}
 
+.type_paragraph {
+  margin: 0;
+  color: #567C8D;
+  font-weight: 600;
 }
 
 .plan-icon {
@@ -89,7 +99,7 @@
 }
 
 .light_color {
-  color: white;
+  color: #567C8D;
 }
 
 .pricing-wrapper {
@@ -99,24 +109,34 @@
 .price_heading {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #567C8D;
 }
 
 .price_popular {
-  color: #F5EFEB;
+  color: #567C8D;
 }
 
 .paragraph {
   font-size: 1rem;
-  color: #2F4156;
+  color: #567C8D;
   width: 100%;
   margin-top: 20px;
+}
+
+.paragraph.pricing {
+  color: #567C8D;
+}
+
+.pricing-card.dark .paragraph,
+.pricing-card.dark .paragraph.pricing {
+  color: #567C8D;
 }
 
 .bottom_heading {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 20px;
-  color: #F5EFEB;
+  color: #567C8D;
 }
 
 .button {
@@ -130,30 +150,32 @@
 }
 
 .button.outline {
-  border: 0px solid #2F4156;
+  border: 1px solid #567C8D;
   padding: 20px 40px;
   background: transparent;
+   color: #567C8D;
 }
 
 .button.outline:hover {
-  background: #567C8D;
-  color: #F5EFEB;
+  background: #F5EFEB;
+  color: #567C8D;
 }
 
 .button.light {
   background: #F5EFEB;
-  color: #2F4156;
+  color: #567C8D;
   padding: 20px 35px;
 }
 
 .button.light:hover {
   background: #567C8D;
   color: #F5EFEB;
+  border: 1px solid #F5EFEB;
 }
 
 .button.accent {
-  background: #567C8D;
-  color: #F5EFEB;
+  background: #F5EFEB;
+  color: #567C8D;
 }
 
 .contact-sales-wrap {

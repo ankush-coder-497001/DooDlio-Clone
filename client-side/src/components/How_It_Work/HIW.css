@@ -1,5 +1,5 @@
 .how-it-works-container {
-  background-color: #F5EFEB;
+  background-color: #567C8D;
   padding: 60px 20px;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -15,14 +15,14 @@
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #2F4156;
+  color: #F5EFEB;
 }
 
 .subtitle {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 50px;
-  color: #567C8D;
+  color: #F5EFEB;
 }
 
 .cards-container {
@@ -33,18 +33,18 @@
 }
 
 .card {
-  background-color: #FFFFFF;
+  background-color: #F5EFEB;
   border-radius: 10px;
   padding: 30px 25px;
   width: 300px;
   text-align: left;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border: 1px solid #567C8D;
+  border: 1px solid #F5EFEB;
 }
 
 .stage-label {
-  background-color: #2F4156;
+  background-color: #567C8D;
   color: #F5EFEB;
   font-size: 12px;
   font-weight: bold;
@@ -52,6 +52,7 @@
   border-radius: 15px;
   display: inline-block;
   margin-bottom: 20px;
+  border: 1px solid #F5EFEB;
 }
 
 .illustration {
@@ -71,7 +72,7 @@
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #2F4156;
+  color: #567C8D;
   text-wrap: nowrap;
 }
 
@@ -84,8 +85,8 @@
 
 .learn-more-btn {
   background-color: transparent;
-  border: 1px solid #2F4156;
-  color: #2F4156;
+  border: 1px solid #567C8D;
+  color: #567C8D;
   padding: 8px 20px;
   font-size: 14px;
   cursor: pointer;

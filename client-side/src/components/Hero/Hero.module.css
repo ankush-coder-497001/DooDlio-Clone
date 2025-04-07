@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  background-color: #567C8D;
+  background-color: #F5EFEB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   width: 220px;
   height: 200px;
   z-index: -1;
-  background-color: #2F4156;
+  background-color: #567C8D;
   opacity: 0.6;
   border-radius: 50%;
 }
@@ -42,7 +42,7 @@
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.1;
-  color: #F5EFEB;
+  color: #567C8D;
   margin-bottom: 1.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -50,7 +50,7 @@
 .subheading {
   font-size: 1.25rem;
   line-height: 1.5;
-  color: #F5EFEB;
+  color: #567C8D;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
@@ -62,7 +62,7 @@
 }
 
 .previewButton {
-  background-color: #2F4156;
+  background-color: #567C8D;
   color: #F5EFEB;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -74,16 +74,16 @@
 }
 
 .previewButton:hover {
-  background-color: #F5EFEB;
-  color: #2F4156;
+  background-color: #567C8D;
+  color: #F5EFEB;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .learnButton {
   background-color: transparent;
-  color: #F5EFEB;
-  border: 1px solid #F5EFEB;
+  color: #567C8D;
+  border: 1px solid #567C8D;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
@@ -93,7 +93,7 @@
 }
 
 .learnButton:hover {
-  background-color: rgba(245, 239, 235, 0.1);
+  background-color: rgba(86, 124, 141, 0.1);
 }
 
 .usedBySection {
@@ -103,7 +103,7 @@
 .usedByText {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #F5EFEB;
+  color: #567C8D;
   margin-bottom: 1rem;
 }
 

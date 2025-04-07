@@ -2183,11 +2183,11 @@ textarea.w-select {
 }
 
 :root {
-  --accent: #2F4156;
-  --light-grey: #F5EFEB;
-  --black: #2F4156;
-  --dark-grey: #567C8D;
-  --white: #F5EFEB
+  --accent: #F5EFEB;
+  --light-grey: #567C8D;
+  --black: #F5EFEB;
+  --dark-grey: #F5EFEB;
+  --white: #567C8D
 }
 
 .w-layout-grid {
@@ -3416,12 +3416,13 @@ p {
 }
 
 .navigation-link {
-  color: #F5EFEB;
+  color: #567C8D;
   margin-top: 0;
   margin-bottom: .5rem;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
   display: block;
   position: relative;
@@ -3431,7 +3432,7 @@ p {
 
 .link-text {
   z-index: 99;
-  color: #F5EFEB;
+  color: #567C8D;
   justify-content: center;
   align-items: center;
   line-height: 130%;
@@ -3454,7 +3455,8 @@ p {
   position: absolute;
   bottom: -100%;
   left: 0%;
-  right: 0%
+  right: 0%;
+  color: #567C8D;
 }
 
 .link-text.cc-1 {
@@ -3512,10 +3514,10 @@ p {
 
 .header {
   z-index: 100000;
-  background-color: #567C8D;
+  background-color: #F5EFEB;
   position: sticky;
   inset: 0% 0% auto;
-  border-bottom: 2px solid #2F4156;
+  border-bottom: 2px solid #567C8D;
 }
 
 .navigation {
@@ -3541,7 +3543,7 @@ p {
 }
 
 .logo-link h2 {
-  color: #F5EFEB;
+  color: #567C8D;
 }
 
 .xudo-logo {
@@ -3591,13 +3593,13 @@ p {
 }
 
 .bar-1 {
-  background-color: #2F4156;
+  background-color: #567C8D;
   width: 30px;
   height: 4px
 }
 
 .bar-2 {
-  background-color: #2F4156;
+  background-color: #567C8D;
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -3608,13 +3610,13 @@ p {
 }
 
 .bar-1-middle {
-  background-color: #567C8D;
+  background-color: #F5EFEB;
   width: 4px;
   height: 0
 }
 
 .bar-3 {
-  background-color: #2F4156;
+  background-color: #567C8D;
   width: 30px;
   height: 4px
 }
@@ -3657,16 +3659,16 @@ p {
 }
 
 .section.features-section {
-  background-color: #2F4156;
+  background-color: #F5EFEB;
   padding-top: 4rem
 }
 
 .section.how-it-works-section {
-  background-color: #F5EFEB;
+  background-color: #567C8D;
 }
 
 .section.integrations-section {
-  background-color: #567C8D;
+  background-color: #F5EFEB;
   border-radius: 0;
   flex-flow: column;
   justify-content: center;
@@ -3678,23 +3680,23 @@ p {
 }
 
 .section.services-section {
-  background-color: #F5EFEB;
+  background-color: #567C8D;
   padding-top: 0;
   position: relative
 }
 
 .section.why-us-section {
-  background-color: #2F4156;
+  background-color: #F5EFEB;
   padding-bottom: 0
 }
 
 .section.team-section {
   position: relative;
-  background-color: #F5EFEB;
+  background-color: #567C8D;
 }
 
 .section.pricing-section {
-  background-color: #2F4156;
+  background-color: #F5EFEB;
 }
 
 .box-wrapper {
@@ -6387,4 +6389,49 @@ p {
   .navigation-right {
     display: none;
   }
+}
+
+.mobile-menu {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #567C8D;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+}
+
+.mobile-menu.menu-hidden {
+  display: none;
+}
+
+.hamburger {
+  color: #567C8D;
+  cursor: pointer;
+}
+
+.mobile-link {
+  color: #F5EFEB;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.mobile-button {
+  color: #567C8D;
+  background-color: #F5EFEB;
+  border-radius: 10px;
+  padding: 12px 30px;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.mobile-button:hover {
+  color: #F5EFEB;
+  background-color: #567C8D;
+  border: 1px solid #F5EFEB;
 }

@@ -4,7 +4,7 @@
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #567C8D;
+  background-color: #F5EFEB;
 }
 
 .container-wrap {
@@ -36,7 +36,7 @@
 .heading {
   font-size: 3.8rem;
   font-weight: 700;
-  color: #F5EFEB;
+  color: #567C8D;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -54,7 +54,7 @@
 
 .paragraph1 {
   font-size: 1.2rem;
-  color: #F5EFEB;
+  color: #567C8D;
   text-align: center;
   width: 60%;
   margin: auto;
@@ -87,7 +87,7 @@
   align-items: start;
   flex-shrink: 0;
   width: 280px;
-  background: #F5EFEB;
+  background: #567C8D;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -107,12 +107,12 @@
 
 h3 {
   font-size: 1.5rem;
-  color: #2F4156;
+  color: #F5EFEB;
 }
 
 .card-description {
   font-size: 1rem;
-  color: #2F4156;
+  color: #F5EFEB;
   text-wrap: wrap;
   text-align: left;
   /* margin-bottom: 10px; */
@@ -121,7 +121,7 @@ h3 {
 .integration-link {
   font-size: 1rem;
   text-decoration: none;
-  color: #567C8D;
+  color: #F5EFEB;
   font-weight: bold;
 }
 .bottom_text
@@ -131,7 +131,7 @@ h3 {
 }
 .bottom_text h1
 {
-  color: #F5EFEB;
+  color: #567C8D;
   font-size: 2.6rem;
   margin-top: 20px;
   text-transform: capitalize;
