@@ -3432,7 +3432,7 @@ p {
 
 .link-text {
   z-index: 99;
-  color: #567C8D;
+  color: #000;
   justify-content: center;
   align-items: center;
   line-height: 130%;
@@ -3514,10 +3514,10 @@ p {
 
 .header {
   z-index: 100000;
-  background-color: #F5EFEB;
+  background-color: white;
   position: sticky;
   inset: 0% 0% auto;
-  border-bottom: 2px solid #567C8D;
+  border-bottom: 1px solid black;
 }
 
 .navigation {
@@ -3543,7 +3543,7 @@ p {
 }
 
 .logo-link h2 {
-  color: #567C8D;
+  color: black;
 }
 
 .xudo-logo {

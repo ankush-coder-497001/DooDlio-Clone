@@ -1,5 +1,5 @@
 .how-it-works-container {
-  background-color: #567C8D;
+  background-color: #E0E1DD;
   padding: 60px 20px;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -15,14 +15,14 @@
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #F5EFEB;
+  color: black;
 }
 
 .subtitle {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 50px;
-  color: #F5EFEB;
+  color: black;
 }
 
 .cards-container {
@@ -33,26 +33,27 @@
 }
 
 .card {
-  background-color: #F5EFEB;
+  background-color: #0A1D33;
   border-radius: 10px;
   padding: 30px 25px;
   width: 300px;
   text-align: left;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border: 1px solid #F5EFEB;
+  border: 1px solid #0A1D33;
+  color: #E0E1DD !important;
 }
 
 .stage-label {
-  background-color: #567C8D;
-  color: #F5EFEB;
+  background-color: #0A1D33;
+  color: #E0E1DD;
   font-size: 12px;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 15px;
   display: inline-block;
   margin-bottom: 20px;
-  border: 1px solid #F5EFEB;
+  border: 1px solid #E0E1DD;
 }
 
 .illustration {
@@ -72,14 +73,14 @@
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #567C8D;
+  color: #E0E1DD;
   text-wrap: nowrap;
 }
 
 .card-text {
   font-size: 15px;
   line-height: 1.5;
-  color: #567C8D;
+  color: #E0E1DD;
   margin-bottom: 25px;
 }
 

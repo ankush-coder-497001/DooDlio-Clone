@@ -105,7 +105,7 @@ export default function Team() {
         {/* Team Section */}
         <section className="team-section">
           <div className="section-header">
-            <h2>Meet our Amazing Team</h2>
+            <h2 id="h2">Meet our Amazing Team</h2>
             <p>Squad of A'tier talents are ready to tackle any challenge you throw at them. Let's play!</p>
           </div>
           <div className="team-grid">

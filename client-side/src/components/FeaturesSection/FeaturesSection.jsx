@@ -83,7 +83,7 @@ const FeaturesSection = () => {
               />
             </div>
             <div className="text-box s">
-              <p className="paragraph large features-paragraph">
+              <p className="features-paragraph1">
               "We create scroll-stopping, social-first content that captivates audiences, drives engagement, and builds strong brand connections."
               </p>
             </div>
@@ -124,7 +124,7 @@ const FeatureCard = ({ icon, title, description, middle }) => {
     <div className="feature-card">
       <img src={icon} alt={title} className="feature-card-icon" />
       <h3 id="card-head" className="card-heading">{title}</h3>
-      <p className="paragraph large features-paragraph card-paragraph">{description}</p>
+      <p id="card-p">{description}</p>
       <img
         src="https://cdn.prod.website-files.com/66b74339fc387196ca3341f8/66c7140403f4ce1c8aa304ad_flower.svg"
         alt=""

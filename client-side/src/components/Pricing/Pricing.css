@@ -2,7 +2,7 @@
 
 .pricing-section {
   padding: 80px 20px;
-  background-color: #567C8D;
+  background-color: #E0E1DD !important;
   text-align: center;
 }
 
@@ -27,14 +27,13 @@
 
 .pricing-heading {
   font-weight: 700;
-  color: #567C8D;
   font-size: 4rem;
+  color: black !important;
 }
 
 .text .price_paragraph {
   font-size: 1.3rem;
   width: 38.4vw;
-  color: #567C8D;
   margin-bottom: 40px;
 }
 
@@ -67,8 +66,8 @@
   width: 100px;
   height: 30px;
   margin-bottom: 10px;
-  color: #567C8D;
-  background: #F5EFEB;
+  color: #0A1D33;
+  background: #E0E1DD;
   border-radius: 10px;
   font-size: 0.9rem;
   display: flex;
@@ -77,13 +76,13 @@
 }
 
 .popular-wrap.outlined {
-  background: #F5EFEB;
-  color: #567C8D;
+  background: #E0E1DD;
+  color: #0A1D33;
 }
 
 .type_paragraph {
   margin: 0;
-  color: #567C8D;
+  color: #0A1D33 !important;
   font-weight: 600;
 }
 
@@ -96,10 +95,11 @@
 .heading-71 {
   font-size: 1.8rem !important;
   margin: 10px 0;
+  color: #0A1D33 !important;
 }
 
 .light_color {
-  color: #567C8D;
+  color: #0A1D33 !important;
 }
 
 .pricing-wrapper {
@@ -109,16 +109,16 @@
 .price_heading {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #567C8D;
+  color: #0A1D33;
 }
 
 .price_popular {
-  color: #567C8D;
+  color: #0A1D33 !important;
 }
 
 .paragraph {
   font-size: 1rem;
-  color: #567C8D;
+  color: #0A1D33 !important;
   width: 100%;
   margin-top: 20px;
 }
@@ -136,7 +136,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 20px;
-  color: #567C8D;
+  color: black;
 }
 
 .button {
@@ -150,34 +150,19 @@
 }
 
 .button.outline {
-  border: 1px solid #567C8D;
-  padding: 20px 40px;
+  border: 1px solid #0A1D33 !important;
   background: transparent;
-   color: #567C8D;
-}
-
-.button.outline:hover {
-  background: #F5EFEB;
-  color: #567C8D;
-}
-
-.button.light {
-  background: #F5EFEB;
-  color: #567C8D;
-  padding: 20px 35px;
-}
-
-.button.light:hover {
-  background: #567C8D;
-  color: #F5EFEB;
-  border: 1px solid #F5EFEB;
+   color: #0A1D33 !important;
 }
 
 .button.accent {
-  background: #F5EFEB;
-  color: #567C8D;
+  background: #F5EFEB !important;
+  color: #0A1D33 !important; ;
 }
-
+.button:hover {
+  background: #0A1D33 !important;
+  color: #F5EFEB !important;
+}
 .contact-sales-wrap {
   margin-top: 20px;
 }

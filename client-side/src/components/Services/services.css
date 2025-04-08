@@ -1,6 +1,6 @@
 .services-container {
   padding: 80px 20px;
-  background-color: #567C8D;
+  background-color: #E0E1DD;
   min-height: 100vh;
   font-family: Arial, sans-serif;
 }
@@ -22,7 +22,6 @@
   font-weight: 700;
   position: relative;
   z-index: 1;
-  color: #F5EFEB;
 }
 
 .yellow-blob {
@@ -31,7 +30,7 @@
   top: -10px;
   width: 120px;
   height: 60px;
-  background-color: #567C8D;
+  /* background-color: #0A1D33; */
   border-radius: 50%;
   transform: rotate(15deg);
   z-index: 0;
@@ -39,7 +38,6 @@
 
 .services-subtitle {
   font-size: 18px;
-  color: #F5EFEB;
   margin-bottom: 80px;
 }
 
@@ -58,7 +56,6 @@
   font-size: 24px;
   font-weight: 600;
   transform: rotate(-10deg);
-  color: #F5EFEB;
 }
 
 .service-item .icon {
